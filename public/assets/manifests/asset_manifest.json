@@ -1,0 +1,2342 @@
+{
+  "app": "BYTE ACADEMY",
+  "version": "1.0.0",
+  "naming": "two-digit row-major index followed by snake_case description",
+  "notes": [
+    "Place existing original atlases in public/assets/atlas-source using the source_image names.",
+    "The 16-sprite atlases use a 4x4 grid; atlases 14 and 18 use 2x2.",
+    "All output files are PNG with transparent background; no sprites are included in this template."
+  ],
+  "atlases": [
+    {
+      "id": "01",
+      "name": "byte_poses",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_01_byte_poses.png",
+      "output_dir": "public/assets/sprites/atlas_01_byte_poses",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "idle_front",
+          "filename": "01_idle_front.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/01_idle_front.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "idle_three_quarter",
+          "filename": "02_idle_three_quarter.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/02_idle_three_quarter.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "idle_side_right",
+          "filename": "03_idle_side_right.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/03_idle_side_right.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "idle_back",
+          "filename": "04_idle_back.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/04_idle_back.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "wave_right",
+          "filename": "05_wave_right.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/05_wave_right.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "wave_left",
+          "filename": "06_wave_left.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/06_wave_left.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "point_right",
+          "filename": "07_point_right.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/07_point_right.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "point_left",
+          "filename": "08_point_left.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/08_point_left.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "celebrate_victory",
+          "filename": "09_celebrate_victory.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/09_celebrate_victory.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "clap_happy",
+          "filename": "10_clap_happy.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/10_clap_happy.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "thinking",
+          "filename": "11_thinking.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/11_thinking.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "explaining",
+          "filename": "12_explaining.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/12_explaining.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "surprised",
+          "filename": "13_surprised.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/13_surprised.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "thumbs_up",
+          "filename": "14_thumbs_up.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/14_thumbs_up.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "sad",
+          "filename": "15_sad.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/15_sad.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "jump_happy",
+          "filename": "16_jump_happy.png",
+          "path": "/assets/sprites/atlas_01_byte_poses/16_jump_happy.png"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "byte_faces",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_02_byte_faces.png",
+      "output_dir": "public/assets/sprites/atlas_02_byte_faces",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "neutral_happy",
+          "filename": "01_neutral_happy.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/01_neutral_happy.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "big_smile",
+          "filename": "02_big_smile.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/02_big_smile.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "laughing_eyes_closed",
+          "filename": "03_laughing_eyes_closed.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/03_laughing_eyes_closed.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "wink",
+          "filename": "04_wink.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/04_wink.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "curious",
+          "filename": "05_curious.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/05_curious.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "surprised_wide_eyes",
+          "filename": "06_surprised_wide_eyes.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/06_surprised_wide_eyes.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "focused",
+          "filename": "07_focused.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/07_focused.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "thinking",
+          "filename": "08_thinking.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/08_thinking.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "excited",
+          "filename": "09_excited.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/09_excited.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "proud",
+          "filename": "10_proud.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/10_proud.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "sleepy",
+          "filename": "11_sleepy.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/11_sleepy.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "confused",
+          "filename": "12_confused.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/12_confused.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "disappointed",
+          "filename": "13_disappointed.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/13_disappointed.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "victory",
+          "filename": "14_victory.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/14_victory.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "speaking",
+          "filename": "15_speaking.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/15_speaking.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "encouraging_smile",
+          "filename": "16_encouraging_smile.png",
+          "path": "/assets/sprites/atlas_02_byte_faces/16_encouraging_smile.png"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "name": "hardware",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_03_hardware.png",
+      "output_dir": "public/assets/sprites/atlas_03_hardware",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "mouse_mint_three_quarter",
+          "filename": "01_mouse_mint_three_quarter.png",
+          "path": "/assets/sprites/atlas_03_hardware/01_mouse_mint_three_quarter.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "mouse_mint_top",
+          "filename": "02_mouse_mint_top.png",
+          "path": "/assets/sprites/atlas_03_hardware/02_mouse_mint_top.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "keyboard_lavender",
+          "filename": "03_keyboard_lavender.png",
+          "path": "/assets/sprites/atlas_03_hardware/03_keyboard_lavender.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "desktop_monitor",
+          "filename": "04_desktop_monitor.png",
+          "path": "/assets/sprites/atlas_03_hardware/04_desktop_monitor.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "computer_tower",
+          "filename": "05_computer_tower.png",
+          "path": "/assets/sprites/atlas_03_hardware/05_computer_tower.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "laptop_open",
+          "filename": "06_laptop_open.png",
+          "path": "/assets/sprites/atlas_03_hardware/06_laptop_open.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "headphones",
+          "filename": "07_headphones.png",
+          "path": "/assets/sprites/atlas_03_hardware/07_headphones.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "desktop_speakers",
+          "filename": "08_desktop_speakers.png",
+          "path": "/assets/sprites/atlas_03_hardware/08_desktop_speakers.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "usb_flash_drive",
+          "filename": "09_usb_flash_drive.png",
+          "path": "/assets/sprites/atlas_03_hardware/09_usb_flash_drive.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "usb_cable",
+          "filename": "10_usb_cable.png",
+          "path": "/assets/sprites/atlas_03_hardware/10_usb_cable.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "webcam",
+          "filename": "11_webcam.png",
+          "path": "/assets/sprites/atlas_03_hardware/11_webcam.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "microphone",
+          "filename": "12_microphone.png",
+          "path": "/assets/sprites/atlas_03_hardware/12_microphone.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "printer",
+          "filename": "13_printer.png",
+          "path": "/assets/sprites/atlas_03_hardware/13_printer.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "wifi_router",
+          "filename": "14_wifi_router.png",
+          "path": "/assets/sprites/atlas_03_hardware/14_wifi_router.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "external_storage",
+          "filename": "15_external_storage.png",
+          "path": "/assets/sprites/atlas_03_hardware/15_external_storage.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "drawing_tablet",
+          "filename": "16_drawing_tablet.png",
+          "path": "/assets/sprites/atlas_03_hardware/16_drawing_tablet.png"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "name": "mouse_skills",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_04_mouse_skills.png",
+      "output_dir": "public/assets/sprites/atlas_04_mouse_skills",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "mouse_neutral",
+          "filename": "01_mouse_neutral.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/01_mouse_neutral.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "mouse_left_highlight",
+          "filename": "02_mouse_left_highlight.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/02_mouse_left_highlight.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "mouse_right_highlight",
+          "filename": "03_mouse_right_highlight.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/03_mouse_right_highlight.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "mouse_wheel_highlight",
+          "filename": "04_mouse_wheel_highlight.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/04_mouse_wheel_highlight.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "mouse_left_press",
+          "filename": "05_mouse_left_press.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/05_mouse_left_press.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "mouse_right_press",
+          "filename": "06_mouse_right_press.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/06_mouse_right_press.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "mouse_double_click",
+          "filename": "07_mouse_double_click.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/07_mouse_double_click.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "mouse_scroll_up",
+          "filename": "08_mouse_scroll_up.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/08_mouse_scroll_up.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "mouse_scroll_down",
+          "filename": "09_mouse_scroll_down.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/09_mouse_scroll_down.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "mouse_middle_press",
+          "filename": "10_mouse_middle_press.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/10_mouse_middle_press.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "mouse_click_hold",
+          "filename": "11_mouse_click_hold.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/11_mouse_click_hold.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "mouse_drag_arrow",
+          "filename": "12_mouse_drag_arrow.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/12_mouse_drag_arrow.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "cursor_arrow",
+          "filename": "13_cursor_arrow.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/13_cursor_arrow.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "cursor_pointer_hand",
+          "filename": "14_cursor_pointer_hand.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/14_cursor_pointer_hand.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "cursor_move",
+          "filename": "15_cursor_move.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/15_cursor_move.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "cursor_grab",
+          "filename": "16_cursor_grab.png",
+          "path": "/assets/sprites/atlas_04_mouse_skills/16_cursor_grab.png"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "name": "mouse_garden",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_05_mouse_garden.png",
+      "output_dir": "public/assets/sprites/atlas_05_mouse_garden",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "tree_small",
+          "filename": "01_tree_small.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/01_tree_small.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "tree_medium",
+          "filename": "02_tree_medium.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/02_tree_medium.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "tree_tall",
+          "filename": "03_tree_tall.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/03_tree_tall.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "shrub_mint",
+          "filename": "04_shrub_mint.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/04_shrub_mint.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "grass_mound",
+          "filename": "05_grass_mound.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/05_grass_mound.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "grass_tuft",
+          "filename": "06_grass_tuft.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/06_grass_tuft.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "mushroom_red",
+          "filename": "07_mushroom_red.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/07_mushroom_red.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "mushroom_lavender",
+          "filename": "08_mushroom_lavender.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/08_mushroom_lavender.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "flower_pink",
+          "filename": "09_flower_pink.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/09_flower_pink.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "flower_yellow",
+          "filename": "10_flower_yellow.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/10_flower_yellow.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "daisy_cluster",
+          "filename": "11_daisy_cluster.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/11_daisy_cluster.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "flower_bush_pink",
+          "filename": "12_flower_bush_pink.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/12_flower_bush_pink.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "basket_empty",
+          "filename": "13_basket_empty.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/13_basket_empty.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "basket_stars",
+          "filename": "14_basket_stars.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/14_basket_stars.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "star_gold_large",
+          "filename": "15_star_gold_large.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/15_star_gold_large.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "star_gold_small",
+          "filename": "16_star_gold_small.png",
+          "path": "/assets/sprites/atlas_05_mouse_garden/16_star_gold_small.png"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "name": "mouse_objects",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_06_mouse_objects.png",
+      "output_dir": "public/assets/sprites/atlas_06_mouse_objects",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "balloon_red",
+          "filename": "01_balloon_red.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/01_balloon_red.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "balloon_cyan",
+          "filename": "02_balloon_cyan.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/02_balloon_cyan.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "balloon_yellow",
+          "filename": "03_balloon_yellow.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/03_balloon_yellow.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "target_bullseye",
+          "filename": "04_target_bullseye.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/04_target_bullseye.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "treasure_chest_closed",
+          "filename": "05_treasure_chest_closed.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/05_treasure_chest_closed.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "treasure_chest_open",
+          "filename": "06_treasure_chest_open.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/06_treasure_chest_open.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "gift_box_closed",
+          "filename": "07_gift_box_closed.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/07_gift_box_closed.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "gift_box_open",
+          "filename": "08_gift_box_open.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/08_gift_box_open.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "apple_red",
+          "filename": "09_apple_red.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/09_apple_red.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "mango_yellow",
+          "filename": "10_mango_yellow.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/10_mango_yellow.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "crate_wood",
+          "filename": "11_crate_wood.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/11_crate_wood.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "toy_basket",
+          "filename": "12_toy_basket.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/12_toy_basket.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "puzzle_piece_blue",
+          "filename": "13_puzzle_piece_blue.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/13_puzzle_piece_blue.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "puzzle_piece_yellow",
+          "filename": "14_puzzle_piece_yellow.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/14_puzzle_piece_yellow.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "padlock_gold",
+          "filename": "15_padlock_gold.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/15_padlock_gold.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "key_gold",
+          "filename": "16_key_gold.png",
+          "path": "/assets/sprites/atlas_06_mouse_objects/16_key_gold.png"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "name": "typing_hands",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_07_typing_hands.png",
+      "output_dir": "public/assets/sprites/atlas_07_typing_hands",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "left_home",
+          "filename": "01_left_home.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/01_left_home.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "right_home",
+          "filename": "02_right_home.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/02_right_home.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "left_index_press",
+          "filename": "03_left_index_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/03_left_index_press.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "right_index_press",
+          "filename": "04_right_index_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/04_right_index_press.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "left_middle_press",
+          "filename": "05_left_middle_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/05_left_middle_press.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "right_middle_press",
+          "filename": "06_right_middle_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/06_right_middle_press.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "left_ring_press",
+          "filename": "07_left_ring_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/07_left_ring_press.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "right_ring_press",
+          "filename": "08_right_ring_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/08_right_ring_press.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "left_pinky_press",
+          "filename": "09_left_pinky_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/09_left_pinky_press.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "right_pinky_press",
+          "filename": "10_right_pinky_press.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/10_right_pinky_press.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "left_thumb_space",
+          "filename": "11_left_thumb_space.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/11_left_thumb_space.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "right_thumb_space",
+          "filename": "12_right_thumb_space.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/12_right_thumb_space.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "left_hover",
+          "filename": "13_left_hover.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/13_left_hover.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "right_hover",
+          "filename": "14_right_hover.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/14_right_hover.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "left_index_raised",
+          "filename": "15_left_index_raised.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/15_left_index_raised.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "right_index_raised",
+          "filename": "16_right_index_raised.png",
+          "path": "/assets/sprites/atlas_07_typing_hands/16_right_index_raised.png"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "name": "keyboard",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_08_keyboard.png",
+      "output_dir": "public/assets/sprites/atlas_08_keyboard",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "keyboard_lavender_top",
+          "filename": "01_keyboard_lavender_top.png",
+          "path": "/assets/sprites/atlas_08_keyboard/01_keyboard_lavender_top.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "keyboard_mint_top",
+          "filename": "02_keyboard_mint_top.png",
+          "path": "/assets/sprites/atlas_08_keyboard/02_keyboard_mint_top.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "keyboard_compact_three_quarter",
+          "filename": "03_keyboard_compact_three_quarter.png",
+          "path": "/assets/sprites/atlas_08_keyboard/03_keyboard_compact_three_quarter.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "keyboard_colorful_large",
+          "filename": "04_keyboard_colorful_large.png",
+          "path": "/assets/sprites/atlas_08_keyboard/04_keyboard_colorful_large.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "keycap_lavender",
+          "filename": "05_keycap_lavender.png",
+          "path": "/assets/sprites/atlas_08_keyboard/05_keycap_lavender.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "keycap_cyan",
+          "filename": "06_keycap_cyan.png",
+          "path": "/assets/sprites/atlas_08_keyboard/06_keycap_cyan.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "keycap_peach",
+          "filename": "07_keycap_peach.png",
+          "path": "/assets/sprites/atlas_08_keyboard/07_keycap_peach.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "keycap_mint",
+          "filename": "08_keycap_mint.png",
+          "path": "/assets/sprites/atlas_08_keyboard/08_keycap_mint.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "keycap_spacebar",
+          "filename": "09_keycap_spacebar.png",
+          "path": "/assets/sprites/atlas_08_keyboard/09_keycap_spacebar.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "keycap_enter",
+          "filename": "10_keycap_enter.png",
+          "path": "/assets/sprites/atlas_08_keyboard/10_keycap_enter.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "keycap_shift",
+          "filename": "11_keycap_shift.png",
+          "path": "/assets/sprites/atlas_08_keyboard/11_keycap_shift.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "keycap_backspace",
+          "filename": "12_keycap_backspace.png",
+          "path": "/assets/sprites/atlas_08_keyboard/12_keycap_backspace.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "keycap_pressed",
+          "filename": "13_keycap_pressed.png",
+          "path": "/assets/sprites/atlas_08_keyboard/13_keycap_pressed.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "keycap_correct",
+          "filename": "14_keycap_correct.png",
+          "path": "/assets/sprites/atlas_08_keyboard/14_keycap_correct.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "keycap_incorrect",
+          "filename": "15_keycap_incorrect.png",
+          "path": "/assets/sprites/atlas_08_keyboard/15_keycap_incorrect.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "keycap_disabled",
+          "filename": "16_keycap_disabled.png",
+          "path": "/assets/sprites/atlas_08_keyboard/16_keycap_disabled.png"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "name": "file_icons",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_09_file_icons.png",
+      "output_dir": "public/assets/sprites/atlas_09_file_icons",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "folder_closed_gold",
+          "filename": "01_folder_closed_gold.png",
+          "path": "/assets/sprites/atlas_09_file_icons/01_folder_closed_gold.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "folder_open_gold",
+          "filename": "02_folder_open_gold.png",
+          "path": "/assets/sprites/atlas_09_file_icons/02_folder_open_gold.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "folder_pictures_cyan",
+          "filename": "03_folder_pictures_cyan.png",
+          "path": "/assets/sprites/atlas_09_file_icons/03_folder_pictures_cyan.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "folder_documents_lavender",
+          "filename": "04_folder_documents_lavender.png",
+          "path": "/assets/sprites/atlas_09_file_icons/04_folder_documents_lavender.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "folder_videos_peach",
+          "filename": "05_folder_videos_peach.png",
+          "path": "/assets/sprites/atlas_09_file_icons/05_folder_videos_peach.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "folder_music_mint",
+          "filename": "06_folder_music_mint.png",
+          "path": "/assets/sprites/atlas_09_file_icons/06_folder_music_mint.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "folder_assignments_yellow",
+          "filename": "07_folder_assignments_yellow.png",
+          "path": "/assets/sprites/atlas_09_file_icons/07_folder_assignments_yellow.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "folder_downloads_white_cyan",
+          "filename": "08_folder_downloads_white_cyan.png",
+          "path": "/assets/sprites/atlas_09_file_icons/08_folder_downloads_white_cyan.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "file_image",
+          "filename": "09_file_image.png",
+          "path": "/assets/sprites/atlas_09_file_icons/09_file_image.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "file_video",
+          "filename": "10_file_video.png",
+          "path": "/assets/sprites/atlas_09_file_icons/10_file_video.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "file_audio",
+          "filename": "11_file_audio.png",
+          "path": "/assets/sprites/atlas_09_file_icons/11_file_audio.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "file_text_document",
+          "filename": "12_file_text_document.png",
+          "path": "/assets/sprites/atlas_09_file_icons/12_file_text_document.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "file_pdf",
+          "filename": "13_file_pdf.png",
+          "path": "/assets/sprites/atlas_09_file_icons/13_file_pdf.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "file_spreadsheet",
+          "filename": "14_file_spreadsheet.png",
+          "path": "/assets/sprites/atlas_09_file_icons/14_file_spreadsheet.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "file_presentation",
+          "filename": "15_file_presentation.png",
+          "path": "/assets/sprites/atlas_09_file_icons/15_file_presentation.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "file_zip",
+          "filename": "16_file_zip.png",
+          "path": "/assets/sprites/atlas_09_file_icons/16_file_zip.png"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "file_actions",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_10_file_actions.png",
+      "output_dir": "public/assets/sprites/atlas_10_file_actions",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "action_new_folder",
+          "filename": "01_action_new_folder.png",
+          "path": "/assets/sprites/atlas_10_file_actions/01_action_new_folder.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "action_rename",
+          "filename": "02_action_rename.png",
+          "path": "/assets/sprites/atlas_10_file_actions/02_action_rename.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "action_copy",
+          "filename": "03_action_copy.png",
+          "path": "/assets/sprites/atlas_10_file_actions/03_action_copy.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "action_paste",
+          "filename": "04_action_paste.png",
+          "path": "/assets/sprites/atlas_10_file_actions/04_action_paste.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "action_cut",
+          "filename": "05_action_cut.png",
+          "path": "/assets/sprites/atlas_10_file_actions/05_action_cut.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "action_move",
+          "filename": "06_action_move.png",
+          "path": "/assets/sprites/atlas_10_file_actions/06_action_move.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "action_delete",
+          "filename": "07_action_delete.png",
+          "path": "/assets/sprites/atlas_10_file_actions/07_action_delete.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "action_restore",
+          "filename": "08_action_restore.png",
+          "path": "/assets/sprites/atlas_10_file_actions/08_action_restore.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "action_search",
+          "filename": "09_action_search.png",
+          "path": "/assets/sprites/atlas_10_file_actions/09_action_search.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "action_sort_ascending",
+          "filename": "10_action_sort_ascending.png",
+          "path": "/assets/sprites/atlas_10_file_actions/10_action_sort_ascending.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "action_sort_descending",
+          "filename": "11_action_sort_descending.png",
+          "path": "/assets/sprites/atlas_10_file_actions/11_action_sort_descending.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "action_new_document",
+          "filename": "12_action_new_document.png",
+          "path": "/assets/sprites/atlas_10_file_actions/12_action_new_document.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "action_folder_selected",
+          "filename": "13_action_folder_selected.png",
+          "path": "/assets/sprites/atlas_10_file_actions/13_action_folder_selected.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "action_file_selected",
+          "filename": "14_action_file_selected.png",
+          "path": "/assets/sprites/atlas_10_file_actions/14_action_file_selected.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "action_save",
+          "filename": "15_action_save.png",
+          "path": "/assets/sprites/atlas_10_file_actions/15_action_save.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "action_undo",
+          "filename": "16_action_undo.png",
+          "path": "/assets/sprites/atlas_10_file_actions/16_action_undo.png"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "vietnamese_typing",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_11_vietnamese_typing.png",
+      "output_dir": "public/assets/sprites/atlas_11_vietnamese_typing",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "notebook_open",
+          "filename": "01_notebook_open.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/01_notebook_open.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "notebook_closed",
+          "filename": "02_notebook_closed.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/02_notebook_closed.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "pencil_yellow",
+          "filename": "03_pencil_yellow.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/03_pencil_yellow.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "fountain_pen_peach",
+          "filename": "04_fountain_pen_peach.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/04_fountain_pen_peach.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "speech_bubble_white",
+          "filename": "05_speech_bubble_white.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/05_speech_bubble_white.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "answer_bubble_cyan",
+          "filename": "06_answer_bubble_cyan.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/06_answer_bubble_cyan.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "writing_board_cream",
+          "filename": "07_writing_board_cream.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/07_writing_board_cream.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "chalkboard_green",
+          "filename": "08_chalkboard_green.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/08_chalkboard_green.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "checkmark_green",
+          "filename": "09_checkmark_green.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/09_checkmark_green.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "error_marker_peach",
+          "filename": "10_error_marker_peach.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/10_error_marker_peach.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "book_star",
+          "filename": "11_book_star.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/11_book_star.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "speaker_audio",
+          "filename": "12_speaker_audio.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/12_speaker_audio.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "pencil_holder",
+          "filename": "13_pencil_holder.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/13_pencil_holder.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "desk_lamp",
+          "filename": "14_desk_lamp.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/14_desk_lamp.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "classroom_plant",
+          "filename": "15_classroom_plant.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/15_classroom_plant.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "storybook_closed",
+          "filename": "16_storybook_closed.png",
+          "path": "/assets/sprites/atlas_11_vietnamese_typing/16_storybook_closed.png"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "rewards",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_12_rewards.png",
+      "output_dir": "public/assets/sprites/atlas_12_rewards",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "star_gold",
+          "filename": "01_star_gold.png",
+          "path": "/assets/sprites/atlas_12_rewards/01_star_gold.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "star_silver",
+          "filename": "02_star_silver.png",
+          "path": "/assets/sprites/atlas_12_rewards/02_star_silver.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "star_bronze",
+          "filename": "03_star_bronze.png",
+          "path": "/assets/sprites/atlas_12_rewards/03_star_bronze.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "star_inactive",
+          "filename": "04_star_inactive.png",
+          "path": "/assets/sprites/atlas_12_rewards/04_star_inactive.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "medal_gold",
+          "filename": "05_medal_gold.png",
+          "path": "/assets/sprites/atlas_12_rewards/05_medal_gold.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "medal_silver",
+          "filename": "06_medal_silver.png",
+          "path": "/assets/sprites/atlas_12_rewards/06_medal_silver.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "medal_bronze",
+          "filename": "07_medal_bronze.png",
+          "path": "/assets/sprites/atlas_12_rewards/07_medal_bronze.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "medal_lavender",
+          "filename": "08_medal_lavender.png",
+          "path": "/assets/sprites/atlas_12_rewards/08_medal_lavender.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "badge_mouse",
+          "filename": "09_badge_mouse.png",
+          "path": "/assets/sprites/atlas_12_rewards/09_badge_mouse.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "badge_keyboard",
+          "filename": "10_badge_keyboard.png",
+          "path": "/assets/sprites/atlas_12_rewards/10_badge_keyboard.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "badge_file_management",
+          "filename": "11_badge_file_management.png",
+          "path": "/assets/sprites/atlas_12_rewards/11_badge_file_management.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "badge_vietnamese_typing",
+          "filename": "12_badge_vietnamese_typing.png",
+          "path": "/assets/sprites/atlas_12_rewards/12_badge_vietnamese_typing.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "trophy_gold",
+          "filename": "13_trophy_gold.png",
+          "path": "/assets/sprites/atlas_12_rewards/13_trophy_gold.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "treasure_chest_closed",
+          "filename": "14_treasure_chest_closed.png",
+          "path": "/assets/sprites/atlas_12_rewards/14_treasure_chest_closed.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "treasure_chest_open",
+          "filename": "15_treasure_chest_open.png",
+          "path": "/assets/sprites/atlas_12_rewards/15_treasure_chest_open.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "gift_reward",
+          "filename": "16_gift_reward.png",
+          "path": "/assets/sprites/atlas_12_rewards/16_gift_reward.png"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "navigation",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_13_navigation.png",
+      "output_dir": "public/assets/sprites/atlas_13_navigation",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "nav_home",
+          "filename": "01_nav_home.png",
+          "path": "/assets/sprites/atlas_13_navigation/01_nav_home.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "nav_explore",
+          "filename": "02_nav_explore.png",
+          "path": "/assets/sprites/atlas_13_navigation/02_nav_explore.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "nav_missions",
+          "filename": "03_nav_missions.png",
+          "path": "/assets/sprites/atlas_13_navigation/03_nav_missions.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "nav_achievements",
+          "filename": "04_nav_achievements.png",
+          "path": "/assets/sprites/atlas_13_navigation/04_nav_achievements.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "audio_on",
+          "filename": "05_audio_on.png",
+          "path": "/assets/sprites/atlas_13_navigation/05_audio_on.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "audio_off",
+          "filename": "06_audio_off.png",
+          "path": "/assets/sprites/atlas_13_navigation/06_audio_off.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "settings",
+          "filename": "07_settings.png",
+          "path": "/assets/sprites/atlas_13_navigation/07_settings.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "help",
+          "filename": "08_help.png",
+          "path": "/assets/sprites/atlas_13_navigation/08_help.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "arrow_back",
+          "filename": "09_arrow_back.png",
+          "path": "/assets/sprites/atlas_13_navigation/09_arrow_back.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "arrow_next",
+          "filename": "10_arrow_next.png",
+          "path": "/assets/sprites/atlas_13_navigation/10_arrow_next.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "restart",
+          "filename": "11_restart.png",
+          "path": "/assets/sprites/atlas_13_navigation/11_restart.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "pause",
+          "filename": "12_pause.png",
+          "path": "/assets/sprites/atlas_13_navigation/12_pause.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "play",
+          "filename": "13_play.png",
+          "path": "/assets/sprites/atlas_13_navigation/13_play.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "fullscreen",
+          "filename": "14_fullscreen.png",
+          "path": "/assets/sprites/atlas_13_navigation/14_fullscreen.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "student_profile",
+          "filename": "15_student_profile.png",
+          "path": "/assets/sprites/atlas_13_navigation/15_student_profile.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "classroom_management",
+          "filename": "16_classroom_management.png",
+          "path": "/assets/sprites/atlas_13_navigation/16_classroom_management.png"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "module_art",
+      "grid": {
+        "rows": 2,
+        "cols": 2
+      },
+      "source_image": "public/assets/atlas-source/atlas_14_module_art.png",
+      "output_dir": "public/assets/sprites/atlas_14_module_art",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "module_mouse_kingdom",
+          "filename": "01_module_mouse_kingdom.png",
+          "path": "/assets/sprites/atlas_14_module_art/01_module_mouse_kingdom.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "module_keyboard_academy",
+          "filename": "02_module_keyboard_academy.png",
+          "path": "/assets/sprites/atlas_14_module_art/02_module_keyboard_academy.png"
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "col": 1,
+          "name": "module_file_city",
+          "filename": "03_module_file_city.png",
+          "path": "/assets/sprites/atlas_14_module_art/03_module_file_city.png"
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "col": 2,
+          "name": "module_vietnamese_typing",
+          "filename": "04_module_vietnamese_typing.png",
+          "path": "/assets/sprites/atlas_14_module_art/04_module_vietnamese_typing.png"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "computer_safety",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_15_computer_safety.png",
+      "output_dir": "public/assets/sprites/atlas_15_computer_safety",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "desktop_monitor",
+          "filename": "01_desktop_monitor.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/01_desktop_monitor.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "laptop",
+          "filename": "02_laptop.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/02_laptop.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "power_button",
+          "filename": "03_power_button.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/03_power_button.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "application_windows",
+          "filename": "04_application_windows.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/04_application_windows.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "window_controls",
+          "filename": "05_window_controls.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/05_window_controls.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "desktop_shortcuts",
+          "filename": "06_desktop_shortcuts.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/06_desktop_shortcuts.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "application_launcher",
+          "filename": "07_application_launcher.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/07_application_launcher.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "recycle_bin",
+          "filename": "08_recycle_bin.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/08_recycle_bin.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "internet_globe",
+          "filename": "09_internet_globe.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/09_internet_globe.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "wifi_signal",
+          "filename": "10_wifi_signal.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/10_wifi_signal.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "browser_window",
+          "filename": "11_browser_window.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/11_browser_window.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "email_envelope",
+          "filename": "12_email_envelope.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/12_email_envelope.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "shield_check",
+          "filename": "13_shield_check.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/13_shield_check.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "padlock",
+          "filename": "14_padlock.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/14_padlock.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "warning_triangle",
+          "filename": "15_warning_triangle.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/15_warning_triangle.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "privacy_shield",
+          "filename": "16_privacy_shield.png",
+          "path": "/assets/sprites/atlas_15_computer_safety/16_privacy_shield.png"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "students",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_16_students.png",
+      "output_dir": "public/assets/sprites/atlas_16_students",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "boy_idle_front",
+          "filename": "01_boy_idle_front.png",
+          "path": "/assets/sprites/atlas_16_students/01_boy_idle_front.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "boy_idle_three_quarter",
+          "filename": "02_boy_idle_three_quarter.png",
+          "path": "/assets/sprites/atlas_16_students/02_boy_idle_three_quarter.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "boy_walk_right",
+          "filename": "03_boy_walk_right.png",
+          "path": "/assets/sprites/atlas_16_students/03_boy_walk_right.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "boy_point_right",
+          "filename": "04_boy_point_right.png",
+          "path": "/assets/sprites/atlas_16_students/04_boy_point_right.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "boy_hold_star",
+          "filename": "05_boy_hold_star.png",
+          "path": "/assets/sprites/atlas_16_students/05_boy_hold_star.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "boy_celebrate",
+          "filename": "06_boy_celebrate.png",
+          "path": "/assets/sprites/atlas_16_students/06_boy_celebrate.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "boy_sitting",
+          "filename": "07_boy_sitting.png",
+          "path": "/assets/sprites/atlas_16_students/07_boy_sitting.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "boy_thumbs_up",
+          "filename": "08_boy_thumbs_up.png",
+          "path": "/assets/sprites/atlas_16_students/08_boy_thumbs_up.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "girl_idle_front",
+          "filename": "09_girl_idle_front.png",
+          "path": "/assets/sprites/atlas_16_students/09_girl_idle_front.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "girl_idle_three_quarter",
+          "filename": "10_girl_idle_three_quarter.png",
+          "path": "/assets/sprites/atlas_16_students/10_girl_idle_three_quarter.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "girl_walk_right",
+          "filename": "11_girl_walk_right.png",
+          "path": "/assets/sprites/atlas_16_students/11_girl_walk_right.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "girl_point_left",
+          "filename": "12_girl_point_left.png",
+          "path": "/assets/sprites/atlas_16_students/12_girl_point_left.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "girl_hold_star",
+          "filename": "13_girl_hold_star.png",
+          "path": "/assets/sprites/atlas_16_students/13_girl_hold_star.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "girl_celebrate",
+          "filename": "14_girl_celebrate.png",
+          "path": "/assets/sprites/atlas_16_students/14_girl_celebrate.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "girl_sitting",
+          "filename": "15_girl_sitting.png",
+          "path": "/assets/sprites/atlas_16_students/15_girl_sitting.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "girl_thumbs_up",
+          "filename": "16_girl_thumbs_up.png",
+          "path": "/assets/sprites/atlas_16_students/16_girl_thumbs_up.png"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "classroom",
+      "grid": {
+        "rows": 4,
+        "cols": 4
+      },
+      "source_image": "public/assets/atlas-source/atlas_17_classroom.png",
+      "output_dir": "public/assets/sprites/atlas_17_classroom",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "blackboard_green",
+          "filename": "01_blackboard_green.png",
+          "path": "/assets/sprites/atlas_17_classroom/01_blackboard_green.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "wall_clock",
+          "filename": "02_wall_clock.png",
+          "path": "/assets/sprites/atlas_17_classroom/02_wall_clock.png"
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "col": 3,
+          "name": "classroom_window",
+          "filename": "03_classroom_window.png",
+          "path": "/assets/sprites/atlas_17_classroom/03_classroom_window.png"
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "col": 4,
+          "name": "picture_frame",
+          "filename": "04_picture_frame.png",
+          "path": "/assets/sprites/atlas_17_classroom/04_picture_frame.png"
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "col": 1,
+          "name": "student_desk",
+          "filename": "05_student_desk.png",
+          "path": "/assets/sprites/atlas_17_classroom/05_student_desk.png"
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "col": 2,
+          "name": "student_chair",
+          "filename": "06_student_chair.png",
+          "path": "/assets/sprites/atlas_17_classroom/06_student_chair.png"
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "col": 3,
+          "name": "bookshelf",
+          "filename": "07_bookshelf.png",
+          "path": "/assets/sprites/atlas_17_classroom/07_bookshelf.png"
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "col": 4,
+          "name": "storage_cabinet",
+          "filename": "08_storage_cabinet.png",
+          "path": "/assets/sprites/atlas_17_classroom/08_storage_cabinet.png"
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "col": 1,
+          "name": "schoolbag",
+          "filename": "09_schoolbag.png",
+          "path": "/assets/sprites/atlas_17_classroom/09_schoolbag.png"
+        },
+        {
+          "index": 10,
+          "row": 3,
+          "col": 2,
+          "name": "notebook_stack",
+          "filename": "10_notebook_stack.png",
+          "path": "/assets/sprites/atlas_17_classroom/10_notebook_stack.png"
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "col": 3,
+          "name": "pencil_organizer",
+          "filename": "11_pencil_organizer.png",
+          "path": "/assets/sprites/atlas_17_classroom/11_pencil_organizer.png"
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "col": 4,
+          "name": "potted_plant",
+          "filename": "12_potted_plant.png",
+          "path": "/assets/sprites/atlas_17_classroom/12_potted_plant.png"
+        },
+        {
+          "index": 13,
+          "row": 4,
+          "col": 1,
+          "name": "rolled_poster",
+          "filename": "13_rolled_poster.png",
+          "path": "/assets/sprites/atlas_17_classroom/13_rolled_poster.png"
+        },
+        {
+          "index": 14,
+          "row": 4,
+          "col": 2,
+          "name": "desk_calendar",
+          "filename": "14_desk_calendar.png",
+          "path": "/assets/sprites/atlas_17_classroom/14_desk_calendar.png"
+        },
+        {
+          "index": 15,
+          "row": 4,
+          "col": 3,
+          "name": "reading_lamp",
+          "filename": "15_reading_lamp.png",
+          "path": "/assets/sprites/atlas_17_classroom/15_reading_lamp.png"
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "col": 4,
+          "name": "book_rack",
+          "filename": "16_book_rack.png",
+          "path": "/assets/sprites/atlas_17_classroom/16_book_rack.png"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "hero_art",
+      "grid": {
+        "rows": 2,
+        "cols": 2
+      },
+      "source_image": "public/assets/atlas-source/atlas_18_hero_art.png",
+      "output_dir": "public/assets/sprites/atlas_18_hero_art",
+      "sprites": [
+        {
+          "index": 1,
+          "row": 1,
+          "col": 1,
+          "name": "hero_byte_welcome",
+          "filename": "01_hero_byte_welcome.png",
+          "path": "/assets/sprites/atlas_18_hero_art/01_hero_byte_welcome.png"
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "col": 2,
+          "name": "hero_mouse_garden",
+          "filename": "02_hero_mouse_garden.png",
+          "path": "/assets/sprites/atlas_18_hero_art/02_hero_mouse_garden.png"
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "col": 1,
+          "name": "hero_keyboard_dream",
+          "filename": "03_hero_keyboard_dream.png",
+          "path": "/assets/sprites/atlas_18_hero_art/03_hero_keyboard_dream.png"
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "col": 2,
+          "name": "hero_file_workstation",
+          "filename": "04_hero_file_workstation.png",
+          "path": "/assets/sprites/atlas_18_hero_art/04_hero_file_workstation.png"
+        }
+      ]
+    }
+  ],
+  "total_atlases": 18,
+  "total_sprites": 264
+}
