@@ -1,0 +1,2 @@
+ALTER TABLE "Attempt" ADD COLUMN "simulationState" TEXT NOT NULL DEFAULT '{}';
+ALTER TABLE "Attempt" ADD COLUMN "simulationRevision" INTEGER NOT NULL DEFAULT 0;

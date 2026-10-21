@@ -1,0 +1,136 @@
+.game-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--cream);
+  border-radius: 22px;
+  box-shadow: 0 5px 0 #26385810;
+}
+.game-topbar > strong {
+  flex: 1;
+  font-size: 20px;
+}
+.instruction-bubble {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 2px solid white;
+  border-radius: 22px 22px 22px 6px;
+  background: #fffef7;
+  box-shadow: 0 5px 0 #26385813;
+}
+.instruction-bubble p {
+  margin: 0;
+  font-weight: 800;
+}
+.instruction-wrap > small {
+  display: block;
+  padding: 10px 4px;
+}
+.game-skills {
+  display: grid;
+  align-content: start;
+  padding: 12px;
+  gap: 10px;
+  background: #fffdf7;
+  border-radius: 22px;
+}
+.game-skills button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 12px;
+  border: 2px solid transparent;
+  background: #f3ebdf;
+  border-radius: 16px;
+  color: var(--navy);
+  font-weight: 800;
+}
+.game-skills button[aria-pressed='true'] {
+  border-color: #e9b348;
+  background: #fff2cb;
+  box-shadow: inset 0 2px 3px #d7a74122;
+}
+.game-skills img,
+.game-skills button > span:first-child {
+  width: 42px;
+  height: 48px;
+}
+.game-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px;
+  background: #fffdf7;
+  border-radius: 20px;
+}
+.game-score strong {
+  display: block;
+}
+.game-timer {
+  display: inline-flex;
+  padding: 8px 14px;
+  background: #fff7e2;
+  border-radius: 12px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.reward-celebration {
+  text-align: center;
+  animation: reward-in 0.5s ease-out both;
+}
+.reward-celebration > img {
+  height: 160px;
+}
+.reward-celebration > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 26px;
+}
+.reward-celebration > div img {
+  width: 48px;
+  height: 48px;
+}
+.pause-byte {
+  display: block;
+  height: 150px;
+  margin: 15px auto;
+}
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+@keyframes reward-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 600px) {
+  .game-topbar {
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+  .game-topbar > strong {
+    order: -1;
+    flex-basis: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reward-celebration {
+    animation: none;
+  }
+}

@@ -1,0 +1,156 @@
+generator client {
+ provider = "prisma-client-js"
+}
+datasource db {
+ provider = "sqlite"
+ url = env("DATABASE_URL")
+}
+model Teacher {
+ id String @id @default(cuid())
+ username String @unique
+ name String
+ passwordHash String
+ createdAt DateTime @default(now())
+ authSessions AuthSession[]
+ classrooms Classroom[]
+ rooms Room[]
+}
+model AuthSession {
+ id String @id @default(cuid())
+ tokenHash String @unique
+ teacherId String
+ teacher Teacher @relation(fields:[teacherId],references:[id],onDelete:Cascade)
+ expiresAt DateTime
+}
+model Classroom {
+ id String @id @default(cuid())
+ name String
+ grade Int
+ teacherId String
+ teacher Teacher @relation(fields:[teacherId],references:[id])
+ students Student[]
+ rooms Room[]
+}
+model Student {
+ id String @id @default(cuid())
+ name String
+ classroomId String?
+ classroom Classroom? @relation(fields:[classroomId],references:[id])
+ practiceIdentity PracticeIdentity?
+ memberships RoomMember[]
+ attempts Attempt[]
+ progress Progress[]
+ achievements Achievement[]
+}
+model Room {
+ id String @id @default(cuid())
+ code String @unique
+ name String
+ teacherId String
+ teacher Teacher @relation(fields:[teacherId],references:[id])
+ classroomId String?
+ classroom Classroom? @relation(fields:[classroomId],references:[id])
+ createdAt DateTime @default(now())
+ sessions RoomSession[]
+ members RoomMember[]
+}
+model RoomMember {
+ id String @id @default(cuid())
+ roomId String
+ room Room @relation(fields:[roomId],references:[id],onDelete:Cascade)
+ studentId String
+ student Student @relation(fields:[studentId],references:[id])
+ tokenHash String @unique
+ expiresAt DateTime
+ joinedAt DateTime @default(now())
+ @@unique([roomId,studentId])
+}
+model RoomSession {
+ id String @id @default(cuid())
+ roomId String
+ room Room @relation(fields:[roomId],references:[id])
+ lessonId String
+ lesson Lesson @relation(fields:[lessonId],references:[id])
+ state String @default("LOBBY")
+ revision Int @default(0)
+ createdAt DateTime @default(now())
+ attempts Attempt[]
+ controlLog String @default("[]")
+}
+model Lesson {
+ id String @id
+ module String
+ title String
+ definition String
+ available Boolean @default(false)
+ sessions RoomSession[]
+ attempts Attempt[]
+ progress Progress[]
+}
+model Attempt {
+ id String @id @default(cuid())
+ studentId String
+ student Student @relation(fields:[studentId],references:[id])
+ lessonId String
+ lesson Lesson @relation(fields:[lessonId],references:[id])
+ sessionId String?
+ session RoomSession? @relation(fields:[sessionId],references:[id])
+ state String @default("IDLE")
+ startedAt DateTime @default(now())
+ skillId String @default("")
+ levelId String @default("")
+ seed Int @default(0)
+ doubleClickMs Int @default(650)
+ pauseLog String @default("[]")
+ typingConfig String @default("{}")
+ simulationState String @default("{}")
+ simulationRevision Int @default(0)
+ result Result?
+}
+model Result {
+ id String @id @default(cuid())
+ attemptId String @unique
+ attempt Attempt @relation(fields:[attemptId],references:[id])
+ score Int
+ accuracy Float
+ durationMs Int
+ correctActions Int @default(0)
+ wrongActions Int @default(0)
+ stars Int @default(0)
+ passed Boolean @default(false)
+ inputLog String @default("[]")
+ cpm Float @default(0)
+ wpm Float @default(0)
+ longestStreak Int @default(0)
+ errorCount Int @default(0)
+ completedTargets Int
+ createdAt DateTime @default(now())
+}
+model Progress {
+ id String @id @default(cuid())
+ studentId String
+ student Student @relation(fields:[studentId],references:[id])
+ lessonId String
+ lesson Lesson @relation(fields:[lessonId],references:[id])
+ bestScore Int @default(0)
+ completedCount Int @default(0)
+ updatedAt DateTime @updatedAt
+ @@unique([studentId,lessonId])
+}
+model Achievement {
+ id String @id @default(cuid())
+ studentId String
+ student Student @relation(fields:[studentId],references:[id])
+ rewardId String
+ stars Int
+ earnedAt DateTime @default(now())
+ @@unique([studentId,rewardId])
+}
+
+model PracticeIdentity {
+ id String @id @default(cuid())
+ tokenHash String @unique
+ studentId String @unique
+ student Student @relation(fields:[studentId],references:[id],onDelete:Cascade)
+ expiresAt DateTime
+}

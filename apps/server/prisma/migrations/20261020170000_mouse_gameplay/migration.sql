@@ -1,0 +1,20 @@
+ALTER TABLE "RoomSession" ADD COLUMN "controlLog" TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE "Attempt" ADD COLUMN "skillId" TEXT NOT NULL DEFAULT '';
+ALTER TABLE "Attempt" ADD COLUMN "levelId" TEXT NOT NULL DEFAULT '';
+ALTER TABLE "Attempt" ADD COLUMN "seed" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "Attempt" ADD COLUMN "doubleClickMs" INTEGER NOT NULL DEFAULT 650;
+ALTER TABLE "Attempt" ADD COLUMN "pauseLog" TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE "Result" ADD COLUMN "correctActions" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "Result" ADD COLUMN "wrongActions" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "Result" ADD COLUMN "stars" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "Result" ADD COLUMN "passed" BOOLEAN NOT NULL DEFAULT false;
+ALTER TABLE "Result" ADD COLUMN "inputLog" TEXT NOT NULL DEFAULT '[]';
+CREATE TABLE "PracticeIdentity" (
+ "id" TEXT NOT NULL PRIMARY KEY,
+ "tokenHash" TEXT NOT NULL,
+ "studentId" TEXT NOT NULL,
+ "expiresAt" DATETIME NOT NULL,
+ CONSTRAINT "PracticeIdentity_studentId_fkey" FOREIGN KEY ("studentId") REFERENCES "Student" ("id") ON DELETE CASCADE ON UPDATE CASCADE
+);
+CREATE UNIQUE INDEX "PracticeIdentity_tokenHash_key" ON "PracticeIdentity"("tokenHash");
+CREATE UNIQUE INDEX "PracticeIdentity_studentId_key" ON "PracticeIdentity"("studentId");

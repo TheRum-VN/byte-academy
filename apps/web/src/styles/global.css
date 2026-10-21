@@ -1,0 +1,1071 @@
+@import 'tailwindcss';
+:root {
+  --mint: #a8e6cf;
+  --cyan: #79d8f2;
+  --lavender: #b8a5f5;
+  --yellow: #ffe49b;
+  --peach: #ffb58f;
+  --cream: #fffdf7;
+  --navy: #263858;
+  font-family: 'Nunito', sans-serif;
+  color: var(--navy);
+  background: #faf5eb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #276da5;
+  outline-offset: 4px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1.2;
+}
+h1 {
+  font-size: clamp(30px, 3.8vw, 50px);
+  letter-spacing: -1.2px;
+}
+h2 {
+  font-size: 26px;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-size: 21px;
+}
+p {
+  line-height: 1.65;
+}
+small {
+  font-size: 13px;
+}
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+button {
+  cursor: pointer;
+}
+label {
+  font-size: 15px;
+  font-weight: 800;
+  display: grid;
+  gap: 7px;
+}
+input,
+select {
+  background: #fffefb;
+  border: 2px solid #e3dccf;
+  border-radius: 13px;
+  min-height: 46px;
+  padding: 10px 13px;
+  width: 100%;
+  color: var(--navy);
+  outline-offset: 2px;
+}
+input:focus,
+select:focus {
+  outline: 2px solid #6cac9a;
+  border-color: #6cac9a;
+}
+input::placeholder {
+  color: #6f7780;
+  font-weight: 400;
+}
+.mint {
+  background: var(--mint);
+}
+.lavender {
+  background: #c8baf4;
+}
+.yellow {
+  background: var(--yellow);
+}
+.peach {
+  background: #ffc5a7;
+}
+.cyan {
+  background: #c1edf5;
+}
+.topbar {
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 38px;
+  background: var(--cream);
+  border-bottom: 2px solid #efe7dc;
+  box-shadow: 0 4px 15px #745b3306;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+.brand strong {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+.brand small {
+  display: block;
+  font-size: 12px;
+  color: #667080;
+}
+.brand-byte {
+  width: 52px;
+  height: 57px;
+}
+.topbar nav {
+  display: flex;
+  padding: 5px;
+  background: #f3ede2;
+  border-radius: 19px;
+  gap: 4px;
+}
+.topbar nav a {
+  padding: 10px 22px;
+  font-weight: 800;
+  font-size: 15px;
+  border-radius: 14px;
+}
+.topbar nav a.active {
+  background: var(--cream);
+  box-shadow: 0 3px 8px #77532912;
+}
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.free-label {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 9px 14px;
+  background: #f3ede2;
+  border-radius: 13px;
+}
+.icon-button {
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 12px;
+}
+.icon-button:hover {
+  background: #2638580a;
+}
+.teacher-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 800;
+}
+.student-app {
+  min-height: 100dvh;
+}
+.student-main {
+  max-width: 1260px;
+  margin: auto;
+  padding: 36px 36px 30px;
+}
+.welcome-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 302px;
+  border-radius: 30px;
+  padding: 30px 45px;
+  background: linear-gradient(110deg, #b5ecd7 0%, #b4e6e7 48%, #cbc0f6 100%);
+  box-shadow:
+    inset 0 2px 2px #ffffffa0,
+    0 7px 0 #d8dfd36b;
+  overflow: hidden;
+}
+.welcome-copy {
+  position: relative;
+  z-index: 1;
+}
+.welcome-copy h1 {
+  margin: 16px 0 14px;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.12;
+}
+.welcome-copy p {
+  font-size: 17px;
+  margin-bottom: 19px;
+  color: #3b5264;
+}
+.welcome-copy button {
+  background: #fffdf7;
+  box-shadow: 0 4px 0 #8bbfba;
+}
+.hero-byte {
+  width: 340px;
+  height: 286px;
+  margin-right: 12px;
+  filter: drop-shadow(0 15px 12px #66658a22);
+}
+.welcome-copy > span {
+  background: #ffffff8a;
+  color: #375765;
+  letter-spacing: 1.1px;
+  font-size: 10px;
+}
+.journeys {
+  margin-top: 35px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-heading h2 {
+  margin: 0 0 6px;
+}
+.section-heading p {
+  margin: 0;
+  font-size: 15px;
+  color: #6b7180;
+}
+.section-note {
+  font-size: 13px;
+  color: #6b7180;
+}
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.module-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 337px;
+  text-align: center;
+  border-radius: 26px;
+  padding: 23px 20px 22px;
+  border: 2px solid #ffffff77;
+  box-shadow:
+    inset 0 2px 2px #ffffff70,
+    0 6px 0 #ded5c366;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 11px 0 #ded5c366;
+}
+.module-number {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  color: #384661b0;
+}
+.module-card h3 {
+  font-size: 23px;
+  max-width: 180px;
+  margin: 9px 0 0;
+  min-height: 56px;
+}
+.module-art {
+  width: 150px;
+  height: 135px;
+  margin: 8px 0 6px;
+  filter: drop-shadow(0 8px 3px #26385816);
+}
+.module-card p {
+  font-size: 14px;
+  margin: 0 0 18px;
+  line-height: 1.45;
+  min-height: 40px;
+  max-width: 190px;
+}
+.module-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 40px;
+  background: var(--cream);
+  border-radius: 14px;
+  padding: 9px 19px;
+  font-size: 14px;
+  font-weight: 900;
+  box-shadow: 0 3px 0 #26385812;
+  margin-top: auto;
+}
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+.first-steps {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.small-byte {
+  width: 65px;
+  height: 85px;
+  flex-shrink: 0;
+}
+.first-steps h3 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+.first-steps p {
+  font-size: 14px;
+  margin: 0;
+  color: #6b7180;
+}
+.extra-modules {
+  display: grid;
+  gap: 12px;
+}
+.extra-module {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 10px 19px;
+  border-radius: 20px;
+  border: 2px solid #fff9;
+  font-weight: 900;
+  font-size: 16px;
+}
+.extra-module img,
+.extra-module > span:first-child {
+  width: 42px;
+  height: 42px;
+}
+.extra-module svg {
+  margin-left: auto;
+}
+.student-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1260px;
+  margin: auto;
+  padding: 8px 36px 24px;
+  font-size: 11px;
+  color: #727a83;
+}
+.form-stack {
+  display: grid;
+  gap: 18px;
+}
+.form-stack p {
+  margin: 0;
+}
+.form-stack button {
+  justify-self: start;
+}
+.code-input {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.error {
+  background: #fff1ed;
+  color: #993c2a;
+  padding: 12px 16px;
+  border: 1px solid #f1bdb0;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.row h2,
+.row h3 {
+  margin-bottom: 0;
+}
+.room-panel p {
+  margin: 14px 0;
+}
+.room-panel small {
+  color: #626d7b;
+}
+.room-code {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-left: 7px;
+  letter-spacing: 4px;
+  border-radius: 10px;
+  background: #edf8f1;
+  font-size: 23px;
+}
+.connection {
+  font-size: 13px;
+  color: #38695a;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.page-heading h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.page-heading p {
+  color: #657184;
+  margin: 0;
+}
+.back-link {
+  display: inline-block;
+  font-weight: 800;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.module-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  border-radius: 28px;
+  margin-bottom: 32px;
+  gap: 30px;
+}
+.module-intro .page-heading {
+  margin: 20px 0;
+}
+.intro-art {
+  width: 220px;
+  height: 220px;
+}
+.development {
+  font-size: 13px;
+  color: #68522f;
+  font-weight: 800;
+  background: #fff8e5;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+.lesson-grid,
+.class-grid,
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 26px 0;
+}
+.loading {
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.landing {
+  min-height: 100dvh;
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px 55px;
+}
+.landing-brand {
+  font-size: 23px;
+  font-weight: 900;
+}
+.landing > section {
+  min-height: calc(100dvh - 160px);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.landing h1 {
+  margin: 22px 0;
+}
+.landing p {
+  max-width: 560px;
+  font-size: 18px;
+  color: #626d7b;
+}
+.landing .development {
+  font-size: 12px;
+}
+.landing-mascot {
+  width: 100%;
+  height: 400px;
+}
+.landing-actions {
+  display: flex;
+  gap: 15px;
+  margin: 28px 0;
+  flex-wrap: wrap;
+}
+.primary-link,
+.secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 900;
+  min-height: 48px;
+  padding: 13px 22px;
+  border-radius: 16px;
+  background: var(--mint);
+  box-shadow: 0 4px 0 #81bba6;
+}
+.secondary-link {
+  background: #fffdf7;
+  box-shadow: 0 4px 0 #e9e0d2;
+  border: 1px solid #e9e0d2;
+}
+.login-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+}
+.login-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  min-height: calc(100dvh - 160px);
+}
+.login-grid h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+.login-grid > section > p {
+  color: #647080;
+}
+.login-byte {
+  width: 260px;
+  height: 260px;
+  display: block;
+  margin: auto;
+}
+.login-grid > section:last-child {
+  padding: 34px;
+}
+.setup-note {
+  font-size: 12px;
+  color: #6c7685;
+  margin: 24px 0 0;
+}
+.admin-app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100dvh;
+}
+.admin-sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  padding: 28px 20px;
+  border-right: 2px solid #ece5d9;
+}
+.admin-sidebar .brand {
+  gap: 6px;
+}
+.admin-sidebar .brand strong {
+  font-size: 16px;
+}
+.admin-logo {
+  width: 49px;
+  height: 58px;
+}
+.admin-sidebar nav {
+  display: grid;
+  gap: 8px;
+  margin-top: 42px;
+}
+.admin-sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 14px;
+  color: #5c6677;
+}
+.admin-sidebar nav a.active {
+  background: #d5f0e3;
+  color: #304d48;
+  box-shadow: 0 3px 0 #bde0cf;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 38px 10px 0;
+  font-size: 13px;
+}
+.sidebar-bottom button {
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy);
+  font-weight: 800;
+}
+.admin-main {
+  max-width: 1280px;
+  padding: 45px;
+  width: 100%;
+  min-width: 0;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.stats-grid p {
+  font-size: 14px;
+  color: #62717b;
+  margin: 0 0 14px;
+}
+.stats-grid strong {
+  font-size: 38px;
+}
+.stats-grid > section:first-child {
+  background: #ddf2e6;
+}
+.stats-grid > section:nth-child(2) {
+  background: #e7e0f8;
+}
+.stats-grid > section:nth-child(3) {
+  background: #fff0c4;
+}
+.teacher-welcome {
+  background: #dceee8;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  margin: 28px 0;
+}
+.teacher-welcome h2 {
+  margin: 16px 0 10px;
+}
+.teacher-welcome > img {
+  width: 220px;
+  height: 230px;
+}
+.teacher-welcome p {
+  font-size: 15px;
+}
+.teacher-welcome .primary-link {
+  font-size: 14px;
+}
+.inline-form {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.inline-form label {
+  flex: 1;
+  min-width: 130px;
+}
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  color: #667080;
+}
+.student-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+.student-list li {
+  padding: 6px 12px;
+  background: #f1efe8;
+  border-radius: 9px;
+  font-size: 14px;
+}
+.table-wrap {
+  overflow: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cream);
+}
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e8e0d4;
+}
+.gallery {
+  padding: 40px;
+  max-width: 1440px;
+  margin: auto;
+}
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+.asset-grid figure {
+  margin: 0;
+  background: white;
+  border: 1px solid #e2ded4;
+  border-radius: 16px;
+  padding: 12px;
+  overflow: hidden;
+}
+.asset-grid img,
+.asset-grid figure > span {
+  width: 100%;
+  height: 130px;
+}
+.asset-grid figcaption {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.asset-grid small {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.gallery section {
+  margin-bottom: 40px;
+}
+@media (min-width: 1500px) {
+  .student-main {
+    padding-top: 45px;
+  }
+  .welcome-banner {
+    min-height: 335px;
+  }
+  .hero-byte {
+    height: 315px;
+    width: 390px;
+  }
+  .module-card {
+    min-height: 365px;
+  }
+  .module-art {
+    height: 155px;
+    width: 170px;
+  }
+}
+@media (max-width: 1050px) {
+  .topbar {
+    padding: 0 22px;
+    gap: 15px;
+  }
+  .topbar nav a {
+    padding: 10px 14px;
+  }
+  .teacher-link span {
+    display: none;
+  }
+  .brand strong {
+    font-size: 17px;
+  }
+  .student-main {
+    padding: 26px;
+  }
+  .hero-byte {
+    width: 270px;
+  }
+  .welcome-banner {
+    padding: 28px;
+  }
+  .module-grid {
+    gap: 13px;
+  }
+  .module-card {
+    padding: 19px 12px;
+  }
+  .module-card h3 {
+    font-size: 20px;
+  }
+  .admin-main {
+    padding: 28px;
+  }
+  .admin-app {
+    grid-template-columns: 225px 1fr;
+  }
+  .teacher-welcome > img {
+    width: 150px;
+  }
+  .login-grid {
+    gap: 35px;
+  }
+}
+@media (max-width: 760px) {
+  .topbar {
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap;
+    padding: 14px 18px;
+    gap: 12px;
+  }
+  .topbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .topbar nav a {
+    flex: 1;
+    text-align: center;
+  }
+  .top-actions {
+    gap: 5px;
+  }
+  .free-label {
+    display: none;
+  }
+  .brand-byte {
+    width: 42px;
+    height: 42px;
+  }
+  .brand strong {
+    font-size: 16px;
+  }
+  .brand small {
+    font-size: 10px;
+  }
+  .student-main {
+    padding: 20px 16px;
+  }
+  .welcome-banner {
+    padding: 25px 20px;
+    min-height: 290px;
+  }
+  .welcome-copy h1 {
+    font-size: 31px;
+  }
+  .welcome-copy p {
+    font-size: 14px;
+  }
+  .hero-byte {
+    position: absolute;
+    width: 185px;
+    height: 200px;
+    right: -28px;
+    bottom: 12px;
+    opacity: 0.35;
+  }
+  .welcome-copy {
+    max-width: 100%;
+  }
+  .welcome-copy > span {
+    font-size: 9px;
+  }
+  .welcome-copy button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+  .module-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .module-card {
+    min-height: 315px;
+  }
+  .module-card h3 {
+    font-size: 21px;
+  }
+  .module-art {
+    height: 120px;
+    width: 130px;
+  }
+  .section-heading h2 {
+    font-size: 23px;
+  }
+  .section-note {
+    display: none;
+  }
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .student-footer {
+    padding: 10px 20px 25px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .module-intro {
+    padding: 24px;
+    gap: 0;
+  }
+  .intro-art {
+    width: 100px;
+    height: 130px;
+  }
+  .module-intro h1 {
+    font-size: 26px;
+  }
+  .lesson-grid,
+  .class-grid,
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+  .landing {
+    padding: 25px;
+  }
+  .landing > section {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: 50px;
+  }
+  .landing h1 {
+    font-size: 36px;
+  }
+  .landing-mascot {
+    height: 220px;
+    grid-row: 2;
+  }
+  .login-page {
+    padding: 24px;
+  }
+  .login-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .login-grid h1 {
+    font-size: 31px;
+  }
+  .login-byte {
+    display: none;
+  }
+  .admin-app {
+    grid-template-columns: 1fr;
+  }
+  .admin-sidebar {
+    padding: 16px;
+    border-right: 0;
+    border-bottom: 2px solid #ece5d9;
+  }
+  .admin-sidebar nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 4px;
+    margin-top: 20px;
+  }
+  .admin-sidebar nav a {
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 10px;
+    gap: 6px;
+  }
+  .sidebar-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 5px 0;
+  }
+  .sidebar-bottom p {
+    margin: 0;
+  }
+  .admin-main {
+    padding: 25px 18px;
+  }
+  .page-heading h1 {
+    font-size: 28px;
+  }
+  .stats-grid {
+    gap: 10px;
+  }
+  .stats-grid section {
+    padding: 15px;
+  }
+  .stats-grid p {
+    font-size: 12px;
+  }
+  .stats-grid strong {
+    font-size: 28px;
+  }
+  .teacher-welcome {
+    padding: 24px;
+  }
+  .teacher-welcome > img {
+    display: none;
+  }
+  .teacher-welcome h2 {
+    font-size: 26px;
+  }
+  .gallery {
+    padding: 20px;
+  }
+  .extra-module span {
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-banner {
+    display: block;
+  }
+  .hero-byte {
+    position: static;
+    display: block;
+    width: 200px;
+    height: 180px;
+    opacity: 1;
+    margin: 12px auto -10px;
+  }
+  .welcome-copy h1 {
+    font-size: 29px;
+  }
+}

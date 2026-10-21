@@ -1,0 +1,517 @@
+/* Practice routes occupy the viewport. Panels reflow; artwork never stretches. */
+html:has(.typing-page, .simulation-page),
+body:has(.typing-page, .simulation-page) {
+  overflow: hidden;
+}
+.student-app:has(.typing-page, .simulation-page) > .topbar,
+.student-app:has(.typing-page, .simulation-page) .student-footer {
+  display: none;
+}
+.student-app:has(.typing-page, .simulation-page) .student-main {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+.student-app :is(.typing-page, .simulation-page) {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+.student-app :is(.typing-header, .simulation-header) {
+  flex-shrink: 0;
+  padding: 12px 22px;
+  gap: 14px;
+}
+.student-app :is(.typing-header, .simulation-header) h1 {
+  font-size: clamp(21px, 2vw, 32px);
+}
+.student-app .typing-header > div {
+  flex: 1;
+}
+.student-app .practice-fullscreen-button {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  padding: 8px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.practice-screen-message {
+  position: absolute;
+  z-index: 50;
+  right: 15px;
+  top: 80px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff5dd;
+  color: #263858;
+}
+.student-app .typing-toolbar {
+  flex-shrink: 0;
+  padding: 8px 22px;
+}
+.student-app .typing-stats {
+  flex-shrink: 0;
+  padding: 0 22px 10px;
+}
+.student-app .typing-stats > div {
+  padding: 6px 12px;
+}
+.student-app .typing-stage {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 6px 22px 10px;
+  overscroll-behavior: contain;
+}
+.student-app .typing-stage > div {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.student-app .typing-bottom {
+  padding: 12px 22px;
+  flex-shrink: 0;
+  background: #fffdf799;
+}
+.student-app .typing-ready {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(850px, calc(100% - 36px));
+  max-height: calc(100dvh - 60px);
+  overflow: auto;
+  box-shadow: 0 15px 65px #26385845;
+  background: #fffdf7;
+  border: 3px solid white;
+  border-radius: 28px;
+  margin: 0;
+}
+.student-app .input-settings {
+  flex-shrink: 0;
+  padding-block: 6px;
+}
+.student-app .simulation-instructions {
+  flex-shrink: 0;
+  padding: 8px 22px;
+  gap: 14px;
+}
+.student-app .simulation-instructions > img {
+  height: 48px;
+  width: 48px;
+}
+.student-app .simulation-actionbar {
+  flex-shrink: 0;
+  padding: 10px 22px;
+}
+.student-app .simulation-layout {
+  flex: 1;
+  min-height: 0;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  padding: 0 20px 12px;
+  gap: 16px;
+}
+.student-app .simulation-playfield {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.student-app .simulation-goals {
+  max-height: 100%;
+  overflow: auto;
+  align-self: stretch;
+}
+.student-app .simulation-goals > img {
+  height: 72px;
+}
+.student-app .simulation-message {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 5px 22px;
+  font-size: 11px;
+}
+.student-app .simulation-ready {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+.student-app .file-explorer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  box-shadow: none;
+}
+.student-app .explorer-title {
+  padding: 7px 14px;
+  flex-shrink: 0;
+}
+.student-app .explorer-toolbar {
+  padding: 5px 8px;
+  flex-shrink: 0;
+}
+.student-app .explorer-toolbar > button {
+  min-height: 54px;
+}
+.student-app .explorer-body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+.student-app .folder-tree {
+  min-height: 0;
+}
+.student-app .file-grid {
+  max-height: none;
+  min-height: 0;
+  overflow: auto;
+}
+.student-app .computer-workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+.student-app .desktop-hint {
+  flex-shrink: 0;
+  margin-bottom: 6px;
+}
+.student-app .desktop-scroll {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  max-width: none;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  box-shadow: none;
+  background: linear-gradient(135deg, #bceae7, #b4d9f4 55%, #d6d5f1);
+}
+.student-app .desktop-world {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+}
+.student-app .desktop-accessible {
+  flex-shrink: 0;
+  padding-top: 6px;
+  margin: 0;
+}
+.student-app :is(.scenario-quiz, .safety-scene) {
+  min-height: 100%;
+  height: auto;
+}
+@media (max-height: 850px) and (min-width: 761px) {
+  .student-app .keyboard-studio {
+    padding: 14px 20px 6px;
+  }
+  .student-app .sample-strip {
+    font-size: 27px;
+    padding: 10px;
+    min-height: 58px;
+    max-height: 90px;
+  }
+  .student-app .next-prompt {
+    margin: 10px 0;
+  }
+  .student-app .virtual-key {
+    height: 36px;
+  }
+  .student-app .key-row {
+    margin-bottom: 5px;
+  }
+  .student-app .typing-hands > img {
+    height: 90px;
+  }
+  .student-app .typing-hands {
+    max-width: 540px;
+  }
+  .student-app .typing-stats strong {
+    font-size: 21px;
+  }
+  .student-app .typing-toolbar img {
+    height: 35px;
+    width: 35px;
+  }
+  .student-app .keyboard-footnote {
+    font-size: 10px;
+  }
+  .student-app .simulation-header h1 {
+    font-size: 25px;
+  }
+  .student-app .simulation-instructions p {
+    font-size: 13px;
+  }
+  .student-app .simulation-goals {
+    padding: 14px 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .student-app .simulation-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    padding: 0 12px 8px;
+  }
+  .student-app .simulation-goals {
+    display: none;
+  }
+  .student-app .simulation-playfield {
+    min-height: 0;
+  }
+  .student-app .simulation-instructions > img {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .student-app :is(.typing-header, .simulation-header) {
+    padding: 10px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .student-app :is(.typing-header, .simulation-header) > div {
+    order: 5;
+    flex: 1 0 100%;
+  }
+  .student-app :is(.typing-header, .simulation-header) h1 {
+    font-size: 21px;
+  }
+  .student-app
+    :is(.typing-header, .simulation-header)
+    > .practice-fullscreen-button {
+    margin-left: auto;
+  }
+  .student-app .typing-toolbar {
+    padding: 7px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .student-app .typing-toolbar p {
+    font-size: 12px;
+  }
+  .student-app .typing-toolbar img {
+    display: none;
+  }
+  .student-app .typing-stats {
+    padding: 0 12px 8px;
+    gap: 5px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .student-app .typing-stats > div {
+    padding: 5px 2px;
+    gap: 1px;
+  }
+  .student-app .typing-stats strong {
+    font-size: 17px;
+  }
+  .student-app .typing-stats span {
+    font-size: 9px;
+  }
+  .student-app .typing-stage {
+    padding: 4px 10px 8px;
+  }
+  .student-app .typing-bottom {
+    padding: 9px 12px;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .student-app .typing-bottom > span {
+    font-size: 11px;
+  }
+  .student-app .simulation-instructions {
+    padding: 8px 12px;
+    gap: 9px;
+  }
+  .student-app .simulation-instructions p {
+    font-size: 12px;
+  }
+  .student-app .simulation-instructions button {
+    font-size: 0;
+    padding: 10px;
+  }
+  .student-app .simulation-instructions button svg {
+    width: 22px;
+  }
+  .student-app .simulation-actionbar {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .student-app .simulation-actionbar > button {
+    font-size: 12px;
+    padding: 9px;
+  }
+  .student-app .simulation-actionbar label {
+    font-size: 10px;
+  }
+  .student-app .explorer-title > span {
+    display: none;
+  }
+  .student-app .explorer-title strong {
+    font-size: 15px;
+  }
+  .student-app .explorer-title small {
+    display: none;
+  }
+  .student-app .explorer-title > img {
+    height: 25px;
+    width: 25px;
+  }
+  .student-app .explorer-toolbar > button {
+    flex-basis: 52px;
+    min-height: 40px;
+    font-size: 9px;
+    gap: 2px;
+    padding: 3px;
+  }
+  .student-app .explorer-toolbar > button img {
+    height: 21px;
+    width: 21px;
+  }
+  .student-app .file-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 5px;
+    padding: 8px;
+  }
+  .student-app .explorer-body {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+  .student-app .simulation-ready {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+  .student-app .simulation-ready > img {
+    width: 100px;
+    height: 110px;
+  }
+  .student-app .scenario-quiz {
+    padding: 15px;
+  }
+  .student-app .scenario-choices {
+    gap: 8px;
+  }
+  .student-app .desktop-accessible {
+    font-size: 10px;
+  }
+}
+
+/* Keep the desktop and its goal panel side by side at desktop widths. */
+.student-app .module-computer .simulation-layout {
+  grid-template-columns: minmax(0, 1fr) 220px;
+  grid-template-rows: minmax(0, 1fr);
+}
+.student-app .module-computer .simulation-goals {
+  display: block;
+}
+.student-app .module-computer .simulation-goals > div {
+  min-width: 0;
+}
+.student-app .module-computer .simulation-instructions > img {
+  display: none;
+}
+.student-app .module-computer .simulation-instructions {
+  min-height: 48px;
+}
+.student-app .desktop-hint {
+  display: none;
+}
+.student-app .desktop-accessible > span {
+  display: none;
+}
+.student-app .desktop-accessible .soft-button {
+  font-size: 11px;
+  padding: 6px 10px;
+}
+@media (max-width: 1000px) {
+  .student-app .module-computer .simulation-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .student-app .module-computer .simulation-goals {
+    display: none;
+  }
+}
+@media (max-height: 1000px) and (min-width: 761px) {
+  .student-app .workshop-scene {
+    padding: 12px 18px 0;
+    min-height: 100%;
+  }
+  .student-app .wooden-board {
+    margin-bottom: 12px;
+    padding: 7px 16px;
+    border-width: 4px;
+    border-bottom-width: 6px;
+  }
+  .student-app .wooden-board p {
+    font-size: 27px;
+    line-height: 1.25;
+    margin: 5px 0;
+  }
+  .student-app .classroom-plant {
+    height: 130px;
+    width: 80px;
+    top: 5px;
+  }
+  .student-app .classroom-byte {
+    height: 120px;
+    width: 96px;
+    top: 5px;
+  }
+  .student-app .workshop-desk {
+    padding: 10px;
+    gap: 8px 14px;
+  }
+  .student-app .writing-space {
+    padding: 10px;
+  }
+  .student-app .writing-space textarea {
+    height: 72px;
+    min-height: 70px;
+    padding: 8px;
+    font-size: 25px;
+  }
+  .student-app .composition-status {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+  .student-app .text-comparison {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .student-app .method-guide {
+    padding: 8px 10px;
+  }
+  .student-app .method-guide > img {
+    height: 30px;
+    width: 40px;
+  }
+  .student-app .method-guide h2 {
+    font-size: 16px;
+    margin: 2px 0 6px;
+  }
+  .student-app .method-guide p {
+    font-size: 11px;
+    line-height: 1.35;
+    margin: 6px 0;
+  }
+  .student-app .workshop-scene .virtual-keyboard {
+    padding: 7px;
+  }
+  .student-app .workshop-scene .virtual-key {
+    height: 22px;
+    font-size: 11px;
+  }
+  .student-app .workshop-scene .key-row {
+    margin-bottom: 3px;
+  }
+}

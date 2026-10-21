@@ -1,0 +1,1648 @@
+/* Student world: cream canvas, tactile pastel surfaces, and original atlas art. */
+.student-app {
+  background:
+    radial-gradient(ellipse at 0 40%, #daf6eb66, transparent 40%),
+    radial-gradient(ellipse at 100% 15%, #e5dffa66, transparent 45%), #fffaf0;
+  --surface-shadow:
+    inset 0 2px 2px #fffc, 0 5px 0 #dcd3c660, 0 10px 24px #6b57760c;
+}
+.student-app .topbar {
+  height: 86px;
+  padding: 0 max(26px, calc((100vw - 1480px) / 2));
+  gap: 20px;
+  background: #fffcf5;
+  border-bottom: 2px solid #f0e6d9;
+  box-shadow: 0 5px 15px #8f736010;
+}
+.student-app .brand {
+  gap: 10px;
+}
+.student-app .brand strong {
+  font-size: 20px;
+  letter-spacing: -0.7px;
+}
+.student-app .brand-byte {
+  width: 48px;
+  height: 51px;
+}
+.student-app .topbar nav {
+  background: #f5eee3;
+  border: 1px solid #eae0d3;
+  box-shadow: inset 0 2px 3px #c8b89b13;
+  border-radius: 24px;
+  padding: 5px;
+  gap: 2px;
+}
+.student-app .topbar nav a {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  padding: 10px 13px;
+  border-radius: 18px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.student-app .topbar nav a img,
+.student-app .topbar nav a > span:first-child:not(:last-child) {
+  width: 24px;
+  height: 24px;
+}
+.student-app .topbar nav a.active {
+  background: #fffcf5;
+  color: #305d53;
+  box-shadow:
+    0 3px 5px #a28b6020,
+    inset 0 1px 2px white;
+}
+.student-app .top-actions {
+  gap: 8px;
+}
+.star-link {
+  font-size: 12px;
+}
+.student-profile {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 185px;
+  border: 0;
+  background: #f3ebe0;
+  color: var(--navy);
+  border-radius: 18px;
+  padding: 6px 12px 6px 6px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 900;
+}
+.student-profile img {
+  width: 37px;
+  height: 37px;
+}
+.student-profile > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.student-profile small {
+  display: block;
+  font-size: 10px;
+  color: #687386;
+  font-weight: 700;
+}
+.student-app .icon-button {
+  background: #f6efe4;
+  border: 1px solid #efe5d6;
+  box-shadow: 0 2px 0 #ddd2bf66;
+}
+.student-app .icon-button:hover {
+  background: #e9f6ef;
+}
+.student-app .student-main {
+  max-width: 1420px;
+  padding: 20px 40px 32px;
+}
+.home-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.home-heading > span,
+.eyebrow {
+  color: #657b78;
+  font-weight: 900;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+}
+.soft-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 17px;
+  color: var(--navy);
+  border: 1px solid #e8dece;
+  border-radius: 15px;
+  background: #fffdf7;
+  box-shadow:
+    inset 0 2px 1px #fff,
+    0 3px 0 #e4d8c8;
+  font-weight: 900;
+  font-size: 14px;
+  transition:
+    transform 0.16s,
+    box-shadow 0.16s,
+    background 0.16s;
+}
+.soft-button:hover {
+  transform: translateY(-2px);
+  background: #eef9f2;
+}
+.soft-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #e4d8c8;
+}
+.classroom-button {
+  min-height: 35px;
+  padding: 6px 13px;
+  font-size: 12px;
+  background: #f5f1ff;
+  border-color: #e2d9f5;
+  box-shadow: 0 3px 0 #d8cfe9;
+}
+.student-app .welcome-banner {
+  isolation: isolate;
+  min-height: 236px;
+  padding: 28px 42px;
+  border: 2px solid #fff9;
+  border-radius: 30px;
+  background: linear-gradient(
+    112deg,
+    #8cdbdb 0%,
+    #93d6ed 39%,
+    #afa9ed 75%,
+    #ac8de4 100%
+  );
+  box-shadow:
+    inset 0 3px 4px #fff8,
+    inset 0 -5px 12px #7471c81c,
+    0 6px 0 #b5ccdc50,
+    0 14px 22px #7e78a212;
+  overflow: hidden;
+}
+.welcome-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 80% -10%, #ffffff77, transparent 42%),
+    radial-gradient(ellipse at 20% 120%, #4d9cd659, transparent 65%);
+}
+.welcome-banner::after {
+  content: '';
+  position: absolute;
+  width: 650px;
+  height: 150px;
+  transform: rotate(-9deg);
+  border-radius: 50%;
+  bottom: -100px;
+  right: -60px;
+  background: #8475d52a;
+  z-index: -1;
+}
+.student-app .welcome-copy {
+  max-width: 70%;
+}
+.student-app .welcome-copy h1 {
+  font-size: clamp(30px, 2.9vw, 44px);
+  margin: 12px 0 10px;
+  line-height: 1.17;
+  letter-spacing: -0.9px;
+  color: #fff;
+  text-shadow: 0 2px 1px #3f76902b;
+}
+.hero-break {
+  display: none;
+}
+.student-app .welcome-copy > span {
+  background: #ffffff70;
+  color: #365769;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  padding: 5px 11px;
+}
+.student-app .welcome-copy p {
+  font-size: clamp(17px, 1.55vw, 22px);
+  color: #294e70;
+  margin: 0 0 19px;
+  font-weight: 700;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.student-app .welcome-copy button {
+  font-size: 14px;
+  box-shadow:
+    0 4px 0 #598fb479,
+    0 5px 10px #38658615;
+}
+.hero-listen {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 2px solid #fff8;
+  border-radius: 50%;
+  background: #ffffff88;
+  color: #325774;
+}
+.audio-message {
+  display: block;
+  max-width: 540px;
+  margin-top: 12px;
+  color: #263858;
+  font-size: 12px;
+}
+.hero-illustration {
+  position: absolute;
+  right: 39px;
+  bottom: 9px;
+  width: 280px;
+  height: 254px;
+}
+.student-app .hero-byte {
+  display: block;
+  position: absolute;
+  width: 225px;
+  height: 235px;
+  right: 18px;
+  bottom: 12px;
+  margin: 0;
+  opacity: 1;
+  filter: drop-shadow(0 12px 5px #5264a82b);
+}
+.byte-animated {
+  position: relative;
+  animation: byte-float 6s ease-in-out infinite;
+}
+.byte-pose {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: contain;
+}
+.byte-pose-one {
+  animation: byte-wave 14s ease-in-out infinite;
+}
+.byte-pose-two {
+  animation: byte-idle 14s ease-in-out infinite;
+  opacity: 0;
+}
+.byte-name {
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+  right: 18px;
+  text-align: center;
+  color: #3d4e7e;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+.hero-star {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(0 4px 2px #706cbf30);
+  transform: rotate(-15deg);
+}
+.star-one {
+  top: 40px;
+  left: -4px;
+}
+.star-two {
+  right: -7px;
+  top: 115px;
+  width: 25px;
+  transform: rotate(16deg);
+}
+.student-app .journeys {
+  margin-top: 27px;
+}
+.student-app .section-heading {
+  margin-bottom: 16px;
+  gap: 18px;
+}
+.student-app .section-heading h2 {
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.student-app .section-heading p {
+  font-size: 13px;
+  color: #6c7480;
+}
+.student-app .section-note {
+  font-size: 11px;
+  font-weight: 800;
+  color: #75818a;
+}
+.student-app .module-grid {
+  gap: 20px;
+}
+.student-app .module-card {
+  padding: 17px 20px 14px;
+  border-radius: 26px;
+  min-height: 338px;
+  border: 2px solid #fff9;
+  box-shadow: var(--surface-shadow);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.student-app .mint {
+  background: linear-gradient(140deg, #c3f0df, #a8e6cf 65%, #a6dfd3);
+}
+.student-app .lavender {
+  background: linear-gradient(140deg, #e0d3fc, #c9b8f3 65%, #bcabed);
+}
+.student-app .yellow {
+  background: linear-gradient(140deg, #fff0bc, #ffe49b 65%, #f8d98c);
+}
+.student-app .peach {
+  background: linear-gradient(140deg, #ffdac0, #ffc2a2 65%, #ffb58f);
+}
+.student-app .cyan {
+  background: linear-gradient(140deg, #def7fc, #bce9f4);
+}
+.student-app .module-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    inset 0 2px 2px #fffc,
+    0 9px 0 #d7cdba55,
+    0 16px 24px #6b57761a;
+}
+.student-app .module-card:active {
+  transform: translateY(3px) scale(0.99);
+  box-shadow:
+    inset 0 2px 2px #fffc,
+    0 2px 0 #d7cdba55;
+}
+.student-app .module-number {
+  font-size: 9px;
+  letter-spacing: 1.7px;
+  color: #3e5264;
+}
+.student-app .module-card h3 {
+  text-transform: uppercase;
+  font-size: clamp(20px, 1.75vw, 25px);
+  line-height: 1.17;
+  max-width: 230px;
+  min-height: 58px;
+  margin: 8px 0 0;
+  letter-spacing: -0.5px;
+}
+.student-app .module-art {
+  height: 132px;
+  width: 210px;
+  margin: 8px 0 5px;
+  object-fit: contain;
+  transition: transform 0.3s;
+  filter: drop-shadow(0 8px 4px #2638581f);
+}
+.student-app .module-card:hover .module-art {
+  transform: translateY(-3px) rotate(-2deg);
+}
+.student-app .module-card p {
+  font-size: 13px;
+  min-height: 36px;
+  margin-bottom: 12px;
+  max-width: 220px;
+  font-weight: 700;
+}
+.student-app .module-cta {
+  min-height: 39px;
+  gap: 12px;
+  border-radius: 15px;
+  padding: 8px 17px;
+  font-size: 13px;
+  box-shadow:
+    0 4px 0 #26385818,
+    0 6px 10px #2638580a,
+    inset 0 2px 1px white;
+}
+.card-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+  margin-top: 15px;
+  color: #41546a;
+  font-size: 10px;
+  font-weight: 800;
+}
+.card-progress progress {
+  flex-basis: 100%;
+}
+.student-app progress {
+  width: 100%;
+  height: 8px;
+  appearance: none;
+  border: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #26385812;
+  accent-color: #4eab91;
+}
+.student-app progress::-webkit-progress-bar {
+  background: #26385812;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 2px #2638580b;
+}
+.student-app progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #79d8d0, #8cbfdc, #c3a5ed);
+  border-radius: 8px;
+}
+.student-app progress::-moz-progress-bar {
+  background: #75c3b0;
+  border-radius: 8px;
+}
+.home-lower {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: start;
+  gap: 25px;
+  margin-top: 29px;
+}
+.missions-panel {
+  padding: 24px;
+  background: #fffef9;
+  border: 2px solid #f0e6d7;
+  border-radius: 27px;
+  box-shadow: var(--surface-shadow);
+}
+.missions-panel .eyebrow {
+  font-size: 9px;
+  letter-spacing: 1.2px;
+}
+.section-sprite {
+  width: 46px;
+  height: 46px;
+}
+.mission-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #697485;
+  margin-bottom: 12px;
+}
+.mission-list {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.mission-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 12px;
+  border: 1px solid #eee8dd;
+  border-radius: 16px;
+  background: #fcf9f2;
+  transition:
+    background 0.15s,
+    transform 0.15s;
+}
+.mission-row:hover {
+  background: #ecf8f1;
+  transform: translateX(2px);
+}
+.mission-row > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.mission-row strong {
+  font-size: 12px;
+  line-height: 1.4;
+  display: block;
+}
+.mission-row small {
+  display: block;
+  font-size: 10px;
+  color: #677588;
+  margin-top: 2px;
+}
+.mission-check {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.mission-check img {
+  width: 31px;
+  height: 34px;
+}
+.mission-check.done {
+  background: #66c5a5;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.mission-reward {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 52px;
+  font-weight: 900;
+  font-size: 13px;
+}
+.mission-reward img {
+  width: 21px;
+  height: 21px;
+}
+.mission-reward small {
+  text-align: center;
+  font-size: 8px;
+  flex-basis: 100%;
+}
+.missions-panel label {
+  font-size: 11px;
+  color: #617486;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #39766b;
+  margin-top: 14px;
+}
+.extra-discover {
+  padding: 8px 0;
+}
+.student-app .extra-module {
+  min-height: 105px;
+  padding: 16px 20px;
+  border-radius: 23px;
+  box-shadow: var(--surface-shadow);
+  margin-bottom: 16px;
+  gap: 16px;
+  transition: transform 0.2s;
+}
+.student-app .extra-module:hover {
+  transform: translateY(-3px);
+}
+.student-app .extra-module > img {
+  width: 64px;
+  height: 64px;
+}
+.extra-module > span {
+  flex: 1;
+}
+.extra-module strong {
+  display: block;
+  font-size: 16px;
+}
+.extra-module small {
+  display: block;
+  font-size: 12px;
+  color: #49667a;
+  margin-top: 5px;
+  font-weight: 700;
+}
+.student-app .student-footer {
+  max-width: 1420px;
+  padding: 0 40px 25px;
+  align-items: center;
+  font-size: 11px;
+}
+.student-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+}
+.student-app .page-heading {
+  margin-bottom: 20px;
+}
+.student-app .page-heading h1 {
+  margin-top: 15px;
+  font-size: 36px;
+}
+.heading-byte {
+  height: 145px;
+  width: 140px;
+}
+.explore-extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+.profile-summary {
+  text-align: center;
+  padding: 15px 0 25px;
+}
+.profile-summary > img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+.profile-summary > span {
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+}
+.data-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border: 2px solid #f0d7b7;
+  background: #fff4e2;
+  padding: 14px 18px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+.achievement-hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 28px 38px;
+  border: 2px solid #fff;
+  border-radius: 28px;
+  background: linear-gradient(120deg, #fff0bc, #f0e6fc);
+  box-shadow: var(--surface-shadow);
+}
+.achievement-hero > img {
+  width: 160px;
+  height: 180px;
+}
+.achievement-hero h1 {
+  margin: 14px 0;
+  font-size: 36px;
+}
+.achievement-hero div > span:last-child {
+  width: max-content;
+}
+.journey-summary {
+  margin: 30px 0;
+  background: #fffdf7;
+  border: 2px solid #eee5d8;
+  padding: 24px;
+  border-radius: 24px;
+}
+.journey-summary p {
+  margin-top: 15px;
+  font-size: 13px;
+}
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.achievement-card {
+  text-align: center;
+  padding: 25px 20px;
+  background: #fffaf1;
+  border: 2px solid #ece3d7;
+  border-radius: 25px;
+}
+.achievement-card > img {
+  width: 100px;
+  height: 100px;
+  filter: grayscale(0.75);
+  opacity: 0.55;
+}
+.achievement-card.earned {
+  background: #edf8ed;
+}
+.achievement-card.earned > img {
+  filter: none;
+  opacity: 1;
+}
+.achievement-card h3 {
+  font-size: 19px;
+  margin-top: 16px;
+}
+.achievement-card p {
+  font-size: 12px;
+}
+.module-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 15px;
+}
+.student-app .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+.student-app .module-intro {
+  padding: 28px 40px;
+  border: 2px solid #fff9;
+  box-shadow: var(--surface-shadow);
+  margin-bottom: 15px;
+  gap: 25px;
+}
+.module-intro-copy {
+  flex: 1;
+}
+.student-app .module-intro h1 {
+  font-size: 38px;
+  margin: 16px 0 10px;
+}
+.student-app .module-intro-copy > p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.student-app .intro-art {
+  width: 250px;
+  height: 210px;
+  filter: drop-shadow(0 10px 5px #2638581a);
+}
+.byte-introduction {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.byte-introduction > img {
+  width: 65px;
+  height: 75px;
+}
+.byte-introduction p {
+  max-width: 420px;
+  border: 2px solid #fff9;
+  border-radius: 17px 17px 17px 4px;
+  padding: 10px 16px;
+  background: #ffffff8c;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0;
+}
+.student-app .asset-progress {
+  font-size: 11px;
+  color: #68768a;
+  margin-bottom: 27px;
+}
+.lesson-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 18px;
+}
+.lesson-toolbar h2 {
+  margin-bottom: 6px;
+}
+.lesson-toolbar p {
+  font-size: 13px;
+  margin: 0;
+  color: #68788b;
+}
+.grade-filter {
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+  border-radius: 17px;
+  background: #eee8de;
+}
+.grade-filter button {
+  min-height: 40px;
+  padding: 9px 16px;
+  background: transparent;
+  color: var(--navy);
+  border: 0;
+  border-radius: 13px;
+  font-weight: 900;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.grade-filter button[aria-pressed='true'] {
+  background: #fffdf7;
+  box-shadow: 0 3px 0 #d9cdbb;
+}
+.student-lesson-grid {
+  display: grid;
+  gap: 18px;
+  margin: 24px 0;
+}
+.student-lesson {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  padding: 23px;
+  border-radius: 25px;
+  border: 2px solid #ece3d6;
+  background: #fffdf7;
+  box-shadow: var(--surface-shadow);
+}
+.lesson-icon {
+  display: grid;
+  place-items: center;
+  width: 102px;
+  height: 118px;
+  border: 2px solid #fff8;
+  border-radius: 22px;
+  flex-shrink: 0;
+}
+.lesson-icon img {
+  width: 78px;
+  height: 88px;
+}
+.lesson-detail {
+  flex: 1;
+}
+.lesson-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 10px;
+  font-weight: 900;
+  color: #65758b;
+}
+.lesson-meta > span:last-child {
+  color: #39796b;
+}
+.lesson-detail h3 {
+  font-size: 22px;
+  margin: 12px 0 7px;
+}
+.lesson-detail p {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.lesson-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  color: #76613c;
+  font-size: 11px;
+  font-weight: 800;
+}
+.lesson-status > span {
+  margin-left: 10px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+.empty-lessons {
+  text-align: center;
+  padding: 28px;
+}
+.empty-lessons > img {
+  width: 100px;
+  height: 110px;
+}
+.lesson-preview {
+  width: min(1000px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  padding: 22px;
+  background: #e4f3ef;
+}
+.lesson-preview > .row {
+  margin-bottom: 18px;
+}
+.lesson-preview > .row h2 {
+  font-size: 17px;
+}
+.preview-body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: start;
+  gap: 22px;
+  margin-top: 24px;
+}
+.preview-content {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+.preview-content > .development {
+  margin: 0;
+}
+.preview-content > button,
+.preview-content > .game-timer {
+  justify-self: start;
+}
+.preview-byte {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px;
+}
+.preview-byte > img {
+  width: 135px;
+  height: 165px;
+}
+.preview-byte h3 {
+  margin: 14px 0 8px;
+}
+.preview-byte p {
+  font-size: 13px;
+  margin: 0;
+}
+.lesson-preview .preview-body {
+  margin-top: 18px;
+}
+.lesson-preview .preview-content {
+  gap: 12px;
+}
+.lesson-preview .preview-byte {
+  padding: 0 10px;
+}
+.lesson-preview .preview-byte > img {
+  height: 135px;
+  width: 115px;
+}
+.lesson-preview .game-score {
+  padding: 12px 16px;
+}
+.lesson-preview .game-skills button > span {
+  flex: 1;
+}
+.lesson-preview .game-skills img {
+  flex-shrink: 0;
+}
+@media (min-width: 1001px) and (max-height: 800px) {
+  .student-app .topbar {
+    height: 76px;
+  }
+  .student-app .student-main {
+    padding-top: 14px;
+  }
+  .home-heading {
+    margin-bottom: 12px;
+  }
+  .student-app .welcome-banner {
+    min-height: 200px;
+    padding: 20px 34px;
+  }
+  .student-app .welcome-copy h1 {
+    font-size: 34px;
+    margin: 10px 0;
+  }
+  .student-app .welcome-copy p {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  .student-app .welcome-copy > span {
+    padding: 4px 10px;
+    font-size: 8px;
+  }
+  .hero-illustration {
+    height: 216px;
+  }
+  .student-app .hero-byte {
+    width: 196px;
+    height: 205px;
+  }
+  .student-app .journeys {
+    margin-top: 23px;
+  }
+  .student-app .section-heading {
+    margin-bottom: 12px;
+  }
+  .student-app .section-heading h2 {
+    font-size: 23px;
+  }
+  .student-app .module-card {
+    min-height: 320px;
+    padding-top: 14px;
+  }
+  .student-app .module-card h3 {
+    min-height: 49px;
+    font-size: 21px;
+  }
+  .student-app .module-art {
+    height: 108px;
+  }
+  .student-app .module-card p {
+    margin-bottom: 10px;
+  }
+  .card-progress {
+    margin-top: 12px;
+  }
+  .student-app .module-intro {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+  .student-app .intro-art {
+    height: 185px;
+  }
+  .student-app .asset-progress {
+    margin-bottom: 20px;
+  }
+}
+.student-app input[type='range'] {
+  min-height: 38px;
+  padding: 0;
+  accent-color: #568b91;
+}
+.student-app details {
+  margin-top: 20px;
+}
+.student-app summary {
+  cursor: pointer;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+@keyframes byte-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1deg);
+  }
+}
+@keyframes byte-wave {
+  0%,
+  42%,
+  100% {
+    opacity: 1;
+  }
+  49%,
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes byte-idle {
+  0%,
+  42%,
+  100% {
+    opacity: 0;
+  }
+  49%,
+  90% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1800px) {
+  .student-app .student-main {
+    padding-top: 28px;
+  }
+  .student-app .welcome-banner {
+    min-height: 265px;
+  }
+  .hero-illustration {
+    height: 282px;
+    right: 65px;
+  }
+  .student-app .hero-byte {
+    width: 245px;
+    height: 263px;
+  }
+  .student-app .module-art {
+    height: 155px;
+  }
+  .student-app .module-card {
+    min-height: 365px;
+  }
+}
+@media (max-width: 1250px) {
+  .student-app .topbar {
+    gap: 12px;
+    padding: 0 20px;
+  }
+  .student-app .topbar nav a {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .student-app .topbar nav a img {
+    display: none;
+  }
+  .student-profile {
+    max-width: 145px;
+  }
+  .student-app .brand strong {
+    font-size: 18px;
+  }
+  .student-app .student-main {
+    padding: 20px 28px 30px;
+  }
+  .student-app .welcome-copy h1 {
+    max-width: 610px;
+    font-size: 34px;
+  }
+  .hero-break {
+    display: block;
+  }
+  .student-app .module-card {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .student-app .module-card h3 {
+    font-size: 21px;
+  }
+  .student-app .module-grid {
+    gap: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .student-app .topbar {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 80px;
+    padding: 12px 24px;
+  }
+  .student-app .topbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .student-app .topbar nav a {
+    flex: 1;
+    justify-content: center;
+  }
+  .student-app .topbar nav a img {
+    display: block;
+  }
+  .student-app .module-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .student-app .module-card h3 {
+    max-width: 250px;
+    font-size: 23px;
+    min-height: 54px;
+  }
+  .student-app .module-art {
+    width: 220px;
+    height: 150px;
+  }
+  .student-app .welcome-copy {
+    max-width: 65%;
+  }
+  .student-app .welcome-copy h1 {
+    font-size: 32px;
+  }
+  .hero-illustration {
+    right: 15px;
+    width: 225px;
+  }
+  .student-app .hero-byte {
+    width: 195px;
+  }
+  .home-lower {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 18px;
+  }
+  .student-app .extra-module {
+    padding: 15px;
+    gap: 10px;
+  }
+  .extra-module small {
+    display: none;
+  }
+  .student-app .extra-module > img {
+    width: 45px;
+    height: 55px;
+  }
+  .student-app .module-intro h1 {
+    font-size: 30px;
+  }
+  .student-app .intro-art {
+    width: 195px;
+  }
+  .badge-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .student-app .topbar {
+    padding: 13px 17px;
+    gap: 12px;
+  }
+  .student-app .brand strong {
+    font-size: 16px;
+  }
+  .student-app .brand-byte {
+    width: 39px;
+    height: 42px;
+  }
+  .student-app .brand small {
+    font-size: 10px;
+  }
+  .student-profile {
+    padding: 3px;
+    background: transparent;
+  }
+  .student-profile > span {
+    display: none;
+  }
+  .student-app .top-actions {
+    gap: 5px;
+  }
+  .student-app .topbar nav a {
+    font-size: 12px;
+    padding: 8px 6px;
+    gap: 5px;
+  }
+  .student-app .topbar nav a img {
+    width: 21px;
+    height: 21px;
+  }
+  .student-app .student-main {
+    padding: 17px 18px 27px;
+  }
+  .student-app .welcome-banner {
+    padding: 26px;
+  }
+  .student-app .welcome-copy h1 {
+    font-size: 30px;
+  }
+  .student-app .welcome-copy p {
+    font-size: 16px;
+  }
+  .student-app .welcome-copy > span {
+    font-size: 8px;
+    letter-spacing: 0.7px;
+  }
+  .student-app .welcome-copy button {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .hero-illustration {
+    right: 6px;
+    width: 180px;
+    height: 220px;
+  }
+  .student-app .hero-byte {
+    width: 158px;
+    height: 205px;
+    right: 10px;
+  }
+  .byte-name {
+    display: none;
+  }
+  .hero-star {
+    width: 25px;
+  }
+  .star-two {
+    right: 0;
+  }
+  .student-app .section-heading h2 {
+    font-size: 22px;
+  }
+  .student-app .module-grid {
+    gap: 16px;
+  }
+  .student-app .module-card {
+    min-height: 338px;
+    padding: 16px 12px;
+  }
+  .student-app .module-card h3 {
+    font-size: 20px;
+    min-height: 54px;
+  }
+  .student-app .module-art {
+    width: 155px;
+    height: 130px;
+  }
+  .student-app .module-card p {
+    font-size: 12px;
+    min-height: 37px;
+  }
+  .student-app .module-cta {
+    font-size: 11px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .card-progress {
+    font-size: 9px;
+  }
+  .home-lower {
+    grid-template-columns: 1fr;
+  }
+  .missions-panel {
+    padding: 20px 16px;
+  }
+  .student-app .extra-module > img {
+    width: 60px;
+    height: 60px;
+  }
+  .extra-module small {
+    display: block;
+  }
+  .student-app .student-footer {
+    padding: 0 18px 22px;
+    gap: 10px;
+  }
+  .student-app .section-note {
+    display: none;
+  }
+  .student-app .module-intro {
+    padding: 24px;
+    position: relative;
+    align-items: start;
+    gap: 10px;
+  }
+  .student-app .intro-art {
+    width: 120px;
+    height: 150px;
+  }
+  .student-app .module-intro h1 {
+    font-size: 28px;
+  }
+  .student-app .module-intro-copy > p {
+    font-size: 14px;
+  }
+  .byte-introduction {
+    gap: 10px;
+  }
+  .byte-introduction > img {
+    width: 50px;
+    height: 65px;
+  }
+  .byte-introduction p {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .lesson-toolbar {
+    flex-wrap: wrap;
+  }
+  .student-lesson {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 18px;
+  }
+  .lesson-icon {
+    width: 70px;
+    height: 85px;
+  }
+  .lesson-icon img {
+    width: 55px;
+    height: 65px;
+  }
+  .lesson-detail {
+    flex-basis: calc(100% - 90px);
+  }
+  .lesson-detail h3 {
+    font-size: 19px;
+  }
+  .lesson-meta {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .student-lesson > button {
+    margin-left: auto;
+  }
+  .explore-extras {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .student-app .page-heading h1 {
+    font-size: 28px;
+  }
+  .heading-byte {
+    width: 90px;
+    height: 110px;
+  }
+  .achievement-hero {
+    padding: 24px;
+    gap: 15px;
+  }
+  .achievement-hero > img {
+    width: 100px;
+    height: 130px;
+  }
+  .achievement-hero h1 {
+    font-size: 28px;
+  }
+  .preview-body {
+    grid-template-columns: 1fr;
+  }
+  .preview-body .game-skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .preview-body .game-skills button {
+    flex: 1;
+    font-size: 12px;
+  }
+  .preview-byte > img {
+    width: 95px;
+    height: 130px;
+  }
+  .preview-byte {
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .student-app .topbar {
+    gap: 10px 6px;
+  }
+  .student-app .brand {
+    gap: 7px;
+  }
+  .student-app .brand strong {
+    font-size: 14px;
+  }
+  .student-app .brand small {
+    font-size: 9px;
+  }
+  .student-app .brand-byte {
+    width: 33px;
+  }
+  .student-app .top-actions {
+    gap: 4px;
+  }
+  .student-app .top-actions .icon-button {
+    min-width: 34px;
+    min-height: 37px;
+    padding: 5px;
+  }
+  .star-link > span {
+    padding: 5px 6px;
+    gap: 3px;
+  }
+  .star-link img {
+    width: 18px;
+    height: 18px;
+  }
+  .student-profile img {
+    width: 29px;
+    height: 32px;
+  }
+  .student-app .topbar nav {
+    padding: 4px;
+  }
+  .student-app .topbar nav a {
+    font-size: 11px;
+    padding: 8px 4px;
+    gap: 4px;
+  }
+  .student-app .topbar nav a img {
+    width: 18px;
+    height: 18px;
+  }
+  .home-heading > span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .classroom-button {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+  .student-app .welcome-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px;
+  }
+  .student-app .welcome-copy {
+    max-width: 100%;
+  }
+  .student-app .welcome-copy h1 {
+    font-size: 30px;
+  }
+  .hero-break {
+    display: none;
+  }
+  .student-app .welcome-copy p {
+    font-size: 15px;
+  }
+  .hero-illustration {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    margin: 10px auto -10px;
+  }
+  .student-app .hero-byte {
+    width: 160px;
+    height: 180px;
+    right: calc(50% - 80px);
+    bottom: 0;
+  }
+  .star-one {
+    top: 35px;
+    left: 28px;
+  }
+  .star-two {
+    right: 20px;
+    top: 90px;
+  }
+  .student-app .module-card h3 {
+    font-size: 17px;
+    min-height: 42px;
+  }
+  .student-app .module-number {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .student-app .module-art {
+    height: 115px;
+    width: 130px;
+  }
+  .student-app .module-card {
+    min-height: 325px;
+    border-radius: 22px;
+    padding: 15px 10px;
+  }
+  .student-app .module-card p {
+    font-size: 11px;
+    min-height: 47px;
+  }
+  .student-app .module-cta {
+    padding: 8px 9px;
+    font-size: 10px;
+    gap: 5px;
+  }
+  .student-app .module-cta svg {
+    width: 14px;
+  }
+  .card-progress {
+    font-size: 8px;
+  }
+  .mission-row {
+    gap: 8px;
+    padding: 10px 8px;
+  }
+  .mission-row strong {
+    font-size: 11px;
+  }
+  .mission-row > svg {
+    display: none;
+  }
+  .mission-reward {
+    flex-shrink: 0;
+  }
+  .badge-grid {
+    grid-template-columns: 1fr;
+  }
+  .student-app .module-intro {
+    flex-wrap: wrap;
+  }
+  .student-app .intro-art {
+    width: 140px;
+    height: 125px;
+    margin: 5px auto 0;
+  }
+  .module-intro-copy {
+    flex-basis: 100%;
+  }
+  .student-app .module-intro h1 {
+    font-size: 29px;
+  }
+  .achievement-hero {
+    flex-direction: column;
+    align-items: start;
+  }
+  .achievement-hero > img {
+    align-self: center;
+    height: 110px;
+  }
+  .data-error {
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .byte-animated,
+  .byte-pose {
+    animation: none;
+  }
+  .byte-pose-one {
+    opacity: 1;
+  }
+  .byte-pose-two {
+    display: none;
+  }
+  .student-app .module-card:hover,
+  .student-app .module-card:hover .module-art,
+  .student-app .extra-module:hover,
+  .mission-row:hover {
+    transform: none;
+  }
+}
+@media (min-width: 481px) {
+  .hero-illustration {
+    height: calc(100% - 16px);
+  }
+  .student-app .hero-byte {
+    height: calc(100% - 24px);
+    bottom: 20px;
+  }
+}
+.lesson-preview button:disabled {
+  cursor: not-allowed;
+}
+.top-actions .classroom-button {
+  min-height: 42px;
+  background: #edf7ef;
+  border-color: #dae7d8;
+  box-shadow: 0 3px 0 #cddfd2;
+}
+@media (max-width: 480px) {
+  .student-app .brand strong {
+    font-size: 12px;
+  }
+  .top-actions .classroom-button {
+    padding: 5px;
+    min-height: 37px;
+    min-width: 34px;
+  }
+  .classroom-label {
+    display: none;
+  }
+}
+.typing-group-filter {
+  max-width: 360px;
+  margin: 20px 0;
+}

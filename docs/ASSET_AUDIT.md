@@ -6,7 +6,7 @@ Audit toàn bộ PNG bằng Pillow: mở và giải mã đầy đủ, đối chi
 - CSV: 264 dòng.
 - Đường dẫn trùng: 0. Nội dung trùng SHA-256: 0 nhóm.
 - PNG ngoài manifest: 0.
-- references/: Không tìm thấy; không giả định có concept.
+- references/: Có.
 
 | ID | Atlas | Khai báo | Đọc được | Atlas gốc |
 |---|---|---:|---:|---|
@@ -40,3 +40,13 @@ Không có.
 
 ## Trùng nội dung
 Không có.
+
+## Tên file và concept
+Trùng basename giữa các thư mục: 0 nhóm. Trùng trong cùng atlas được coi là lỗi và được kiểm riêng.
+references\UIUX-concept-0.jpg
+references\UIUX-concept-1.jpg
+
+Hai ảnh concept đã được mở và đọc trực quan: UIUX-concept-0.jpg (trang học sinh và preview), UIUX-concept-1.jpg (chi tiết bốn game). Giao diện bám nền cream, header bo mềm, Byte, banner pastel và bốn thẻ phân khu. Không dùng ảnh concept làm screenshot thay giao diện thật.
+
+## Repository ban đầu
+Không có package.json, source/config hay AGENTS.md. Chỉ có public/assets với manifests JSON/CSV/XLSX, 264 sprite PNG và các .gitkeep. references/ được người dùng bổ sung trong lúc audit. Không xóa hoặc ghi đè asset/manifests/concept.
